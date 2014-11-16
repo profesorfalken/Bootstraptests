@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://payzen.lyra-labs.fr/static/2.2.0/images/favicons/lyra.ico">
+    <title>Test Page Web Services v5</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .navbar-buttonex {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Web Services v5</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Create<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Payment</a>
+                                </li>
+                                <li><a href="#">Token</a>
+                                </li>
+                                <li><a href="#">Subscription</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Update<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Payment</a>
+                                </li>
+                                <li><a href="#">Token</a>
+                                </li>
+                                <li><a href="#">Subscription</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">GetDetails<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Payment</a>
+                                </li>
+                                <li><a href="#">Token</a>
+                                </li>
+                                <li><a href="#">Subscription</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cancel<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Payment</a>
+                                </li>
+                                <li><a href="#">Token</a>
+                                </li>
+                                <li><a href="#">Subscription</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="wsV5.html?pp=1">Find Payments</a>
+                                </li>
+                                <li><a href="#">Refund Payment</a>
+                                </li>
+                                <li><a href="#">Duplicate Payment</a>
+                                </li>
+                                <li><a href="#">Validate Payment</a>
+                                </li>
+                                <li><a href="#">Reactivate Token</a>
+                                </li>
+                                <li><a href="#">Verify 3DS Enrollment</a>
+                                </li>
+                                <li><a href="#">Check 3DS Authentication</a>
+                                </li>
+                                <li><a href="#">Capture Payment</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- /container -->
+    <div class="container theme-showcase" role="main">
+        <form id="order" method="post" action="wsV5" role="form" class="form-default" data-operation="">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">commonRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="paymentSource">Payment Source</label>
+                                <input type="text" class="form-control" name="paymentSource" value="" id="paymentSource" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="submissionDate">Submission Date</label>
+                                <input type="datetime" class="form-control" name="submissionDate" value="" id="submissionDate" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="contractNumber">Contract Number</label>
+                                <input type="text" class="form-control" name="contractNumber" value="" id="contractNumber" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="comment">Comment</label>
+                                <input type="text" class="form-control" name="comment" value="" id="comment" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">paymentRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="transactionId">Transaction Id</label>
+                                <input type="text" class="form-control" name="transactionId" value="" id="transactionId" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="amount">Amount</label>
+                                <input type="datetime" class="form-control" name="amount" value="" id="amount" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="currency">Currency</label>
+                                <input type="text" class="form-control" name="currency" value="" id="currency" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="expectedCaptureDate">Expected Capture Date</label>
+                                <input type="text" class="form-control" name="expectedCaptureDate" value="" id="expectedCaptureDate" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="validationMode">Validation Mode</label>
+                                <input type="text" class="form-control" name="validationMode" value="" id="validationMode" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="PaymentOptionCode">Payment Option Code</label>
+                                <input type="text" class="form-control" name="PaymentOptionCode" value="" id="PaymentOptionCode" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">cardRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" class="form-control" name="cardNumber" value="" id="cardNumber" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="scheme">Scheme</label>
+                                <input type="datetime" class="form-control" name="scheme" value="" id="scheme" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="expiryMonth">Expiry Month</label>
+                                <input type="text" class="form-control" name="expiryMonth" value="" id="expiryMonth" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="expiryYear">Expiry Year</label>
+                                <input type="text" class="form-control" name="expiryYear" value="" id="expiryYear" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form-control" name="cvv" value="" id="cvv" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="cardholderBirthday">Cardholder Birthday</label>
+                                <input type="text" class="form-control" name="cardholderBirthday" value="" id="cardholderBirthday" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="paymentToken">Payment Token</label>
+                                <input type="text" class="form-control" name="paymentToken" value="" id="paymentToken" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">orderRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="orderId">Order Id</label>
+                                <input type="text" class="form-control" name="orderId" value="" id="orderId" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="orderInfo">Order Info</label>
+                                <input type="datetime" class="form-control" name="orderInfo" value="" id="orderInfo" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="orderInfo2">Order Info 2</label>
+                                <input type="text" class="form-control" name="orderInfo2" value="" id="orderInfo2" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="orderInfo3">Order Info 3</label>
+                                <input type="text" class="form-control" name="orderInfo3" value="" id="orderInfo3" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="extInfo">Ext Info</label>
+                                <input type="text" class="form-control" name="extInfo" value="" id="extInfo" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">threeDSRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="mode">Mode</label>
+                                <input type="text" class="form-control" name="mode" value="" id="mode" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="orderInfo">RequestId</label>
+                                <input type="datetime" class="form-control" name="requestId" value="" id="requestId" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="pares">Pares</label>
+                                <input type="text" class="form-control" name="pares" value="" id="pares" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="brand">Brand</label>
+                                <input type="text" class="form-control" name="brand" value="" id="brand" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="enrolled">Enrolled</label>
+                                <input type="text" class="form-control" name="enrolled" value="" id="enrolled" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="status">Status</label>
+                                <input type="text" class="form-control" name="status" value="" id="status" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="eci">Eci</label>
+                                <input type="datetime" class="form-control" name="eci" value="" id="eci" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="xid">Xid</label>
+                                <input type="text" class="form-control" name="xid" value="" id="xid" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="cavv">Cavv</label>
+                                <input type="text" class="form-control" name="cavv" value="" id="cavv" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="algorithm">Algorithm</label>
+                                <input type="text" class="form-control" name="algorithm" value="" id="algorithm" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">subscriptionRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="subscriptionId">Subscription Id</label>
+                                <input type="text" class="form-control" name="subscriptionId" value="" id="subscriptionId" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="effectDate">Effect Date</label>
+                                <input type="datetime" class="form-control" name="effectDate" value="" id="effectDate" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="initialAmount">Initial Amount</label>
+                                <input type="text" class="form-control" name="initialAmount" value="" id="initialAmount" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="rrule">RRule</label>
+                                <input type="text" class="form-control" name="rrule" value="" id="rrule" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="subscriptionDescription">Description</label>
+                                <input type="text" class="form-control" name="subscriptionDescription" value="" id="subscriptionDescription" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="subscriptionAmount">Amount</label>
+                                <input type="text" class="form-control" name="subscriptionAmount" value="" id="subscriptionAmount" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="subscriptionCurency">Currency</label>
+                                <input type="datetime" class="form-control" name="subscriptionCurency" value="" id="subscriptionCurency" placeholder="Enter Submission Date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">queryRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-3 form-group">
+                                <label for="queryTransactionId">Transaction Id</label>
+                                <input type="text" class="form-control" name="queryTransactionId" value="" id="queryTransactionId" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="querySequenceNumber">SequenceNumber</label>
+                                <input type="datetime" class="form-control" name="querySequenceNumber" value="" id="querySequenceNumber" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="queryCreationDate">Creation Date</label>
+                                <input type="text" class="form-control" name="queryCreationDate" value="" id="queryCreationDate" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="queryPaymentToken">Payment Token</label>
+                                <input type="text" class="form-control" name="queryPaymentToken" value="" id="queryPaymentToken" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="queryOrderId">Order Id</label>
+                                <input type="text" class="form-control" name="queryOrderId" value="" id="queryOrderId" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-3 form-group">
+                                <label for="querySubscriptionId">Subscription Id</label>
+                                <input type="text" class="form-control" name="staquerySubscriptionIdtus" value="" id="querySubscriptionId" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <label for="queryUuid">UUID</label>
+                                <input type="datetime" class="form-control" name="queryUuid" value="" id="queryUuid" placeholder="Enter Submission Date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">customerRequest.billingDetails</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6 form-group">
+                                <label for="billingReference">Reference</label>
+                                <input type="text" class="form-control" name="billingReference" value="" id="billingReference" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingTitle">Title</label>
+                                <input type="datetime" class="form-control" name="billingTitle" value="" id="billingTitle" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingType">Type</label>
+                                <input type="text" class="form-control" name="billingType" value="" id="billingType" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingName">Name</label>
+                                <input type="text" class="form-control" name="billingName" value="" id="billingName" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingPhoneNumber">Phone Number</label>
+                                <input type="text" class="form-control" name="billingPhoneNumber" value="" id="billingPhoneNumber" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingStreetNumber">Street Number</label>
+                                <input type="text" class="form-control" name="billingStreetNumber" value="" id="billingStreetNumber" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingAddress">Address</label>
+                                <input type="datetime" class="form-control" name="billingAddress" value="" id="billingAddress" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingDistrict">District</label>
+                                <input type="text" class="form-control" name="billingDistrict" value="" id="billingDistrict" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingZipCode">Zip Code</label>
+                                <input type="text" class="form-control" name="billingZipCode" value="" id="billingZipCode" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingCity">City</label>
+                                <input type="text" class="form-control" name="billingCity" value="" id="billingCity" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingState">State</label>
+                                <input type="text" class="form-control" name="billingState" value="" id="billingState" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingCountry">Country</label>
+                                <input type="text" class="form-control" name="billingCountry" value="" id="billingCountry" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingLanguage">Language</label>
+                                <input type="text" class="form-control" name="billingLanguage" value="" id="billingLanguage" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingCellPhoneNumber">Cell Phone Number</label>
+                                <input type="text" class="form-control" name="billingCellPhoneNumber" value="" id="billingCellPhoneNumber" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">customerRequest.shippingDetails</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6 form-group">
+                                <label for="shippingType">Type</label>
+                                <input type="text" class="form-control" name="shippingType" value="" id="shippingType" placeholder="Enter Contract Number">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="shippingName">Name</label>
+                                <input type="text" class="form-control" name="shippingName" value="" id="shippingName" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingPhoneNumber">Phone Number</label>
+                                <input type="text" class="form-control" name="shippingPhoneNumber" value="" id="shippingPhoneNumber" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingStreetNumber">Street Number</label>
+                                <input type="text" class="form-control" name="shippingStreetNumber" value="" id="shippingStreetNumber" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="shippingAddress">Street</label>
+                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="shippingAddress2">Street 2</label>
+                                <input type="datetime" class="form-control" name="shippingAddress2" value="" id="shippingAddress2" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="shippingAddress">District</label>
+                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="Enter Submission Date">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="shippingZipCode">Zip Code</label>
+                                <input type="text" class="form-control" name="shippingZipCode" value="" id="shippingipCode" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingCity">City</label>
+                                <input type="text" class="form-control" name="shippingCity" value="" id="shippingCity" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingState">State</label>
+                                <input type="text" class="form-control" name="shippingState" value="" id="shippingState" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingCountry">Country</label>
+                                <input type="text" class="form-control" name="shippingCountry" value="" id="shippingCountry" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingLanguage">Company</label>
+                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingLanguage">Speed</label>
+                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="Enter Comment">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingCellPhoneNumber">Method</label>
+                                <input type="text" class="form-control" name="shippingCellPhoneNumber" value="" id="shippingCellPhoneNumber" placeholder="Enter Comment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">techRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6 form-group">
+                                <label for="browserUserAgent">Browser User Agent</label>
+                                <input type="text" class="form-control" name="browserUserAgent" value="" id="browserUserAgent" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="browserAccept">Browser Accept</label>
+                                <input type="datetime" class="form-control" name="browserAccept" value="" id="browserAccept" placeholder="Enter Submission Date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">captureRequest</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="col-md-6 form-group">
+                                <label for="transactionIds">Transaction Ids</label>
+                                <input type="text" class="form-control" name="transactionIds" value="" id="transactionIds" placeholder="Enter Payment Source">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="commissionRate">Commission Rate</label>
+                                <input type="datetime" class="form-control" name="commissionRate" value="" id="commissionRate" placeholder="Enter Submission Date">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="creationDate">Creation Date</label>
+                                <input type="datetime" class="form-control" name="creationDate" value="" id="creationDate" placeholder="Enter Submission Date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div id="navbar" class="navbar-collapse collapse" role="action">
+            <div class="navbar-buttonex">
+                <button type="button" class="btn btn-lg btn-primary" aria-label="Left Align" onclick="javascript:document.forms[0].submit()">
+                    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    Call Web Service
+                </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a href="#">
+                        Lyra Network -
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear())
+                        </script>
+                        &nbsp;
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        var url = window.location.href;
+        var operation = null;
+        if (url.lastIndexOf('?') != -1) {
+            operation = url.split('?')[1];
+            operation = operation.split('=')[1];
+        }
+        console.log("operation: " + operation);
+
+        var localForm = $('#order');
+        localForm.data("operation", operation);
+    </script>
+</body>
+
+</html>
