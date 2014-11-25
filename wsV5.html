@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://payzen.lyra-labs.fr/static/2.2.0/images/favicons/lyra.ico">
     <title>Test Page Web Services v5</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,76 +46,89 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Web Services v5</a>
+                    <div class="active">
+                        <a class="navbar-brand">Web Services v5</a>
+                    </div>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Create<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Payment<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Payment</a>
+                                <li><a href="wsV5.html?operation=createPayment">Create</a>
                                 </li>
-                                <li><a href="#">Token</a>
+                                <li><a href="wsV5.html?operation=updatePayment">Update</a>
                                 </li>
-                                <li><a href="#">Subscription</a>
+                                <li><a href="wsV5.html?operation=getPaymentDetails">GetDetails</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=cancelPayment">Cancel</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=refundPayment">Refund</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=duplicatePayment">Duplicate</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=validatePayment">Validate</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=capturePayment">Capture</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=findPayments">Find</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Update<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Token<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Payment</a>
+                                <li><a href="wsV5.html?operation=createToken">Create</a>
                                 </li>
-                                <li><a href="#">Token</a>
+                                <li><a href="wsV5.html?operation=updateToken">Update</a>
                                 </li>
-                                <li><a href="#">Subscription</a>
+                                <li><a href="wsV5.html?operation=getTokenDetails">GetDetails</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=cancelToken">Cancel</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=reactivateToken">Reactivate</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">GetDetails<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Subscription<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Payment</a>
+                                <li><a href="wsV5.html?operation=createSubscription">Create</a>
                                 </li>
-                                <li><a href="#">Token</a>
+                                <li><a href="wsV5.html?operation=updateSubscription">Update</a>
                                 </li>
-                                <li><a href="#">Subscription</a>
+                                <li><a href="wsV5.html?operation=getSubscriptionDetails">GetDetails</a>
+                                </li>
+                                <li><a href="wsV5.html?operation=cancelSubscription">Cancel</a>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cancel<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">3DS<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Payment</a>
+                                <li><a href="wsV5.html?operation=verifyThreeDSEnrollment">Verify 3DS Enrollment</a>
                                 </li>
-                                <li><a href="#">Token</a>
-                                </li>
-                                <li><a href="#">Subscription</a>
+                                <li><a href="wsV5.html?operation=checkThreeDSAuthentication">Check 3DS Authentication</a>
                                 </li>
                             </ul>
                         </li>
-
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a>Target Language</a>
+                        </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Java<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="wsV5.html?pp=1">Find Payments</a>
+                                <li><a href="#">Java</a>
                                 </li>
-                                <li><a href="#">Refund Payment</a>
+                                <li><a href="#">PHP</a>
                                 </li>
-                                <li><a href="#">Duplicate Payment</a>
+                                <li><a href="#">Python</a>
                                 </li>
-                                <li><a href="#">Validate Payment</a>
-                                </li>
-                                <li><a href="#">Reactivate Token</a>
-                                </li>
-                                <li><a href="#">Verify 3DS Enrollment</a>
-                                </li>
-                                <li><a href="#">Check 3DS Authentication</a>
-                                </li>
-                                <li><a href="#">Capture Payment</a>
+                                <li><a href="#">.NET</a>
                                 </li>
                             </ul>
                         </li>
@@ -126,11 +139,13 @@
     </div>
 
     <!-- /container -->
-    <div class="container theme-showcase" role="main">
+    <div class="container" id="operations" role="main">
         <form id="order" method="post" action="wsV5" role="form" class="form-default" data-operation="">
-
+            <input type="hidden" name="operation" id="operation" value="createPayment">
+            <h1><span class="label label-info" id="operationLabel">createPayment</span></h1>
+            <p></p>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="commonRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">commonRequest</h3>
@@ -138,25 +153,25 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="paymentSource">Payment Source</label>
-                                <input type="text" class="form-control" name="paymentSource" value="" id="paymentSource" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="paymentSource" value="" id="paymentSource" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="submissionDate">Submission Date</label>
-                                <input type="datetime" class="form-control" name="submissionDate" value="" id="submissionDate" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="submissionDate" value="" id="submissionDate" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="contractNumber">Contract Number</label>
-                                <input type="text" class="form-control" name="contractNumber" value="" id="contractNumber" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="contractNumber" value="" id="contractNumber" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="comment">Comment</label>
-                                <input type="text" class="form-control" name="comment" value="" id="comment" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="comment" value="" id="comment" placeholder="">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="paymentRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">paymentRequest</h3>
@@ -164,29 +179,29 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="transactionId">Transaction Id</label>
-                                <input type="text" class="form-control" name="transactionId" value="" id="transactionId" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="transactionId" value="" id="transactionId" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="amount">Amount</label>
-                                <input type="datetime" class="form-control" name="amount" value="" id="amount" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="amount" value="3000" id="amount" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="currency">Currency</label>
-                                <input type="text" class="form-control" name="currency" value="" id="currency" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="currency" value="978" id="currency" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="expectedCaptureDate">Expected Capture Date</label>
-                                <input type="text" class="form-control" name="expectedCaptureDate" value="" id="expectedCaptureDate" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="expectedCaptureDate" value="" id="expectedCaptureDate" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="validationMode">Validation Mode</label>
-                                <input type="text" class="form-control" name="validationMode" value="" id="validationMode" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="validationMode" value="" id="validationMode" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="PaymentOptionCode">Payment Option Code</label>
-                                <input type="text" class="form-control" name="PaymentOptionCode" value="" id="PaymentOptionCode" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="PaymentOptionCode" value="" id="PaymentOptionCode" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -194,7 +209,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="cardRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">cardRequest</h3>
@@ -202,40 +217,40 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="cardNumber">Card Number</label>
-                                <input type="text" class="form-control" name="cardNumber" value="" id="cardNumber" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="cardNumber" value="4970100000000003" id="cardNumber" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="scheme">Scheme</label>
-                                <input type="datetime" class="form-control" name="scheme" value="" id="scheme" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="scheme" value="CB" id="scheme" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="expiryMonth">Expiry Month</label>
-                                <input type="text" class="form-control" name="expiryMonth" value="" id="expiryMonth" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="expiryMonth" value="12" id="expiryMonth" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="expiryYear">Expiry Year</label>
-                                <input type="text" class="form-control" name="expiryYear" value="" id="expiryYear" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="expiryYear" value="2017" id="expiryYear" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="cvv">CVV</label>
-                                <input type="text" class="form-control" name="cvv" value="" id="cvv" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="cvv" value="123" id="cvv" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="cardholderBirthday">Cardholder Birthday</label>
-                                <input type="text" class="form-control" name="cardholderBirthday" value="" id="cardholderBirthday" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="cardholderBirthday" value="" id="cardholderBirthday" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="paymentToken">Payment Token</label>
-                                <input type="text" class="form-control" name="paymentToken" value="" id="paymentToken" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="paymentToken" value="" id="paymentToken" placeholder="">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="orderRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">orderRequest</h3>
@@ -243,24 +258,24 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="orderId">Order Id</label>
-                                <input type="text" class="form-control" name="orderId" value="" id="orderId" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="orderId" value="TEST-ORDER" id="orderId" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="orderInfo">Order Info</label>
-                                <input type="datetime" class="form-control" name="orderInfo" value="" id="orderInfo" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="orderInfo" value="" id="orderInfo" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="orderInfo2">Order Info 2</label>
-                                <input type="text" class="form-control" name="orderInfo2" value="" id="orderInfo2" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="orderInfo2" value="" id="orderInfo2" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="orderInfo3">Order Info 3</label>
-                                <input type="text" class="form-control" name="orderInfo3" value="" id="orderInfo3" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="orderInfo3" value="" id="orderInfo3" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="extInfo">Ext Info</label>
-                                <input type="text" class="form-control" name="extInfo" value="" id="extInfo" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="extInfo" value="" id="extInfo" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -268,7 +283,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="threeDSRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">threeDSRequest</h3>
@@ -276,46 +291,46 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="mode">Mode</label>
-                                <input type="text" class="form-control" name="mode" value="" id="mode" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="mode" value="" id="mode" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="orderInfo">RequestId</label>
-                                <input type="datetime" class="form-control" name="requestId" value="" id="requestId" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="requestId" value="" id="requestId" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="pares">Pares</label>
-                                <input type="text" class="form-control" name="pares" value="" id="pares" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="pares" value="" id="pares" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="brand">Brand</label>
-                                <input type="text" class="form-control" name="brand" value="" id="brand" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="brand" value="" id="brand" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="enrolled">Enrolled</label>
-                                <input type="text" class="form-control" name="enrolled" value="" id="enrolled" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="enrolled" value="" id="enrolled" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="status">Status</label>
-                                <input type="text" class="form-control" name="status" value="" id="status" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="status" value="" id="status" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="eci">Eci</label>
-                                <input type="datetime" class="form-control" name="eci" value="" id="eci" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="eci" value="" id="eci" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="xid">Xid</label>
-                                <input type="text" class="form-control" name="xid" value="" id="xid" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="xid" value="" id="xid" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="cavv">Cavv</label>
-                                <input type="text" class="form-control" name="cavv" value="" id="cavv" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="cavv" value="" id="cavv" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="algorithm">Algorithm</label>
-                                <input type="text" class="form-control" name="algorithm" value="" id="algorithm" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="algorithm" value="" id="algorithm" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -323,7 +338,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="subscriptionRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">subscriptionRequest</h3>
@@ -331,39 +346,39 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="subscriptionId">Subscription Id</label>
-                                <input type="text" class="form-control" name="subscriptionId" value="" id="subscriptionId" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="subscriptionId" value="" id="subscriptionId" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="effectDate">Effect Date</label>
-                                <input type="datetime" class="form-control" name="effectDate" value="" id="effectDate" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="effectDate" value="" id="effectDate" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="initialAmount">Initial Amount</label>
-                                <input type="text" class="form-control" name="initialAmount" value="" id="initialAmount" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="initialAmount" value="" id="initialAmount" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="rrule">RRule</label>
-                                <input type="text" class="form-control" name="rrule" value="" id="rrule" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="rrule" value="" id="rrule" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="subscriptionDescription">Description</label>
-                                <input type="text" class="form-control" name="subscriptionDescription" value="" id="subscriptionDescription" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="subscriptionDescription" value="" id="subscriptionDescription" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="subscriptionAmount">Amount</label>
-                                <input type="text" class="form-control" name="subscriptionAmount" value="" id="subscriptionAmount" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="subscriptionAmount" value="" id="subscriptionAmount" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="subscriptionCurency">Currency</label>
-                                <input type="datetime" class="form-control" name="subscriptionCurency" value="" id="subscriptionCurency" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="subscriptionCurency" value="" id="subscriptionCurency" placeholder="">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-12" id="queryRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">queryRequest</h3>
@@ -371,33 +386,33 @@
                         <div class="panel-body">
                             <div class="col-md-3 form-group">
                                 <label for="queryTransactionId">Transaction Id</label>
-                                <input type="text" class="form-control" name="queryTransactionId" value="" id="queryTransactionId" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="queryTransactionId" value="" id="queryTransactionId" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="querySequenceNumber">SequenceNumber</label>
-                                <input type="datetime" class="form-control" name="querySequenceNumber" value="" id="querySequenceNumber" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="querySequenceNumber" value="" id="querySequenceNumber" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="queryCreationDate">Creation Date</label>
-                                <input type="text" class="form-control" name="queryCreationDate" value="" id="queryCreationDate" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="queryCreationDate" value="" id="queryCreationDate" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="queryPaymentToken">Payment Token</label>
-                                <input type="text" class="form-control" name="queryPaymentToken" value="" id="queryPaymentToken" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="queryPaymentToken" value="" id="queryPaymentToken" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="queryOrderId">Order Id</label>
-                                <input type="text" class="form-control" name="queryOrderId" value="" id="queryOrderId" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="queryOrderId" value="" id="queryOrderId" placeholder="">
                             </div>
 
                             <div class="col-md-3 form-group">
                                 <label for="querySubscriptionId">Subscription Id</label>
-                                <input type="text" class="form-control" name="staquerySubscriptionIdtus" value="" id="querySubscriptionId" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="staquerySubscriptionIdtus" value="" id="querySubscriptionId" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
                                 <label for="queryUuid">UUID</label>
-                                <input type="datetime" class="form-control" name="queryUuid" value="" id="queryUuid" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="queryUuid" value="" id="queryUuid" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -405,7 +420,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" id="customerRequest-billingDetails">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">customerRequest.billingDetails</h3>
@@ -413,72 +428,72 @@
                         <div class="panel-body">
                             <div class="col-md-6 form-group">
                                 <label for="billingReference">Reference</label>
-                                <input type="text" class="form-control" name="billingReference" value="" id="billingReference" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="billingReference" value="" id="billingReference" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="billingTitle">Title</label>
-                                <input type="datetime" class="form-control" name="billingTitle" value="" id="billingTitle" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="billingTitle" value="" id="billingTitle" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="billingType">Type</label>
-                                <input type="text" class="form-control" name="billingType" value="" id="billingType" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="billingType" value="" id="billingType" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="billingName">Name</label>
-                                <input type="text" class="form-control" name="billingName" value="" id="billingName" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingName" value="" id="billingName" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingPhoneNumber">Phone Number</label>
-                                <input type="text" class="form-control" name="billingPhoneNumber" value="" id="billingPhoneNumber" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingPhoneNumber" value="" id="billingPhoneNumber" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingStreetNumber">Street Number</label>
-                                <input type="text" class="form-control" name="billingStreetNumber" value="" id="billingStreetNumber" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="billingStreetNumber" value="" id="billingStreetNumber" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="billingAddress">Address</label>
-                                <input type="datetime" class="form-control" name="billingAddress" value="" id="billingAddress" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="billingAddress" value="" id="billingAddress" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="billingDistrict">District</label>
-                                <input type="text" class="form-control" name="billingDistrict" value="" id="billingDistrict" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="billingDistrict" value="" id="billingDistrict" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="billingZipCode">Zip Code</label>
-                                <input type="text" class="form-control" name="billingZipCode" value="" id="billingZipCode" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingZipCode" value="" id="billingZipCode" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingCity">City</label>
-                                <input type="text" class="form-control" name="billingCity" value="" id="billingCity" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingCity" value="" id="billingCity" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingState">State</label>
-                                <input type="text" class="form-control" name="billingState" value="" id="billingState" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingState" value="" id="billingState" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingCountry">Country</label>
-                                <input type="text" class="form-control" name="billingCountry" value="" id="billingCountry" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingCountry" value="" id="billingCountry" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingLanguage">Language</label>
-                                <input type="text" class="form-control" name="billingLanguage" value="" id="billingLanguage" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingLanguage" value="" id="billingLanguage" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingCellPhoneNumber">Cell Phone Number</label>
-                                <input type="text" class="form-control" name="billingCellPhoneNumber" value="" id="billingCellPhoneNumber" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="billingCellPhoneNumber" value="" id="billingCellPhoneNumber" placeholder="">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6" id="customerRequest-shippingDetails">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">customerRequest.shippingDetails</h3>
@@ -486,67 +501,67 @@
                         <div class="panel-body">
                             <div class="col-md-6 form-group">
                                 <label for="shippingType">Type</label>
-                                <input type="text" class="form-control" name="shippingType" value="" id="shippingType" placeholder="Enter Contract Number">
+                                <input type="text" class="form-control" name="shippingType" value="" id="shippingType" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="shippingName">Name</label>
-                                <input type="text" class="form-control" name="shippingName" value="" id="shippingName" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingName" value="" id="shippingName" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingPhoneNumber">Phone Number</label>
-                                <input type="text" class="form-control" name="shippingPhoneNumber" value="" id="shippingPhoneNumber" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingPhoneNumber" value="" id="shippingPhoneNumber" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingStreetNumber">Street Number</label>
-                                <input type="text" class="form-control" name="shippingStreetNumber" value="" id="shippingStreetNumber" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="shippingStreetNumber" value="" id="shippingStreetNumber" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="shippingAddress">Street</label>
-                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="shippingAddress2">Street 2</label>
-                                <input type="datetime" class="form-control" name="shippingAddress2" value="" id="shippingAddress2" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="shippingAddress2" value="" id="shippingAddress2" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="shippingAddress">District</label>
-                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="shippingZipCode">Zip Code</label>
-                                <input type="text" class="form-control" name="shippingZipCode" value="" id="shippingipCode" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingZipCode" value="" id="shippingipCode" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingCity">City</label>
-                                <input type="text" class="form-control" name="shippingCity" value="" id="shippingCity" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingCity" value="" id="shippingCity" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingState">State</label>
-                                <input type="text" class="form-control" name="shippingState" value="" id="shippingState" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingState" value="" id="shippingState" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingCountry">Country</label>
-                                <input type="text" class="form-control" name="shippingCountry" value="" id="shippingCountry" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingCountry" value="" id="shippingCountry" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingLanguage">Company</label>
-                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingLanguage">Speed</label>
-                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="shippingCellPhoneNumber">Method</label>
-                                <input type="text" class="form-control" name="shippingCellPhoneNumber" value="" id="shippingCellPhoneNumber" placeholder="Enter Comment">
+                                <input type="text" class="form-control" name="shippingCellPhoneNumber" value="" id="shippingCellPhoneNumber" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -554,7 +569,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" id="techRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">techRequest</h3>
@@ -562,17 +577,17 @@
                         <div class="panel-body">
                             <div class="col-md-6 form-group">
                                 <label for="browserUserAgent">Browser User Agent</label>
-                                <input type="text" class="form-control" name="browserUserAgent" value="" id="browserUserAgent" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="browserUserAgent" value="" id="browserUserAgent" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="browserAccept">Browser Accept</label>
-                                <input type="datetime" class="form-control" name="browserAccept" value="" id="browserAccept" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="browserAccept" value="" id="browserAccept" placeholder="">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6" id="captureRequest">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">captureRequest</h3>
@@ -580,16 +595,16 @@
                         <div class="panel-body">
                             <div class="col-md-6 form-group">
                                 <label for="transactionIds">Transaction Ids</label>
-                                <input type="text" class="form-control" name="transactionIds" value="" id="transactionIds" placeholder="Enter Payment Source">
+                                <input type="text" class="form-control" name="transactionIds" value="" id="transactionIds" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="commissionRate">Commission Rate</label>
-                                <input type="datetime" class="form-control" name="commissionRate" value="" id="commissionRate" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="commissionRate" value="" id="commissionRate" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="creationDate">Creation Date</label>
-                                <input type="datetime" class="form-control" name="creationDate" value="" id="creationDate" placeholder="Enter Submission Date">
+                                <input type="datetime" class="form-control" name="creationDate" value="" id="creationDate" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -627,19 +642,161 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
     <script>
-        var url = window.location.href;
-        var operation = null;
-        if (url.lastIndexOf('?') != -1) {
-            operation = url.split('?')[1];
-            operation = operation.split('=')[1];
+        function pad(str, max) {
+            str = str.toString();
+            return str.length < max ? pad("0" + str, max) : str;
         }
-        console.log("operation: " + operation);
+        $(document).ready(function () {
+            var url = window.location.href;
+            var operation = null;
+            if (url.lastIndexOf('?') != -1) {
+                operation = url.split('?')[1];
+                operation = operation.split('=')[1];
+            }
 
-        var localForm = $('#order');
-        localForm.data("operation", operation);
+            if (operation) {
+                $('#operation').val(operation);
+                $('#operationLabel').val(operation);
+                $('#operationLabel').html(operation);
+            }
+
+            fieldChecking.check(operation);
+
+            //Generate transactionId value
+            var transactionId = pad(Math.floor((Math.random() * 999999) + 1), 6);
+            console.log('Generated TransactionID: ' + transactionId);
+
+            $("#transactionId").val(transactionId);
+        });
+
+        var fieldChecking = {
+            allowedOperations: {
+                "createPayment": {
+                    "commonRequest": [],
+                    "threeDSRequest": [],
+                    "paymentRequest": [],
+                    "orderRequest": [],
+                    "cardRequest": [],
+                    "customerRequest-billingDetails": [],
+                    "customerRequest-shippingDetails": [],
+                    "techRequest": []
+                },
+                "createToken": {
+                    "commonRequest": [],
+                    "cardRequest": [],
+                    "customerRequest-billingDetails": [],
+                    "customerRequest-shippingDetails": []
+                },
+                "createSubscription": {
+                    "commonRequest": ["paymentToken", "comment"],
+                    "orderRequest": ["orderId", "orderinfo", "orderInfo2", "orderInfo3", "extInfo"],
+                    "subscriptionRequest": ["subscriptionId", "effectDate", "initialAmoun", "initialAmountNumber", "rrule", "description", "amount", "currency"]
+                },
+                "updatePayment": {
+                    "commonRequest": [],
+                    "queryRequest": [],
+                    "paymentRequest": [],
+                    "cardRequest": [],
+                    "customerRequest-billingDetails": [],
+                    "customerRequest-shippingDetails": []
+                },
+                "updateToken": {
+                    "commonRequest": [],
+                    "cardRequest": [],
+                    "customerRequest-billingDetails": [],
+                    "customerRequest-shippingDetails": []
+                },
+                "updateSubscription": {
+                    "commonRequest": [],
+                    "subscriptionRequest": [],
+                    "paymentRequest": []
+                },
+                "getPaymentDetails": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "getTokenDetails": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "getSubscriptionDetails": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "findPayments": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "cancelPayment": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "cancelToken": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "cancelSubscription": {
+                    "commonRequest": [],
+                    "queryRequest": []
+                },
+                "refundPayment": {
+                    "commonRequest": [],
+                    "queryRequest": [],
+                    "paymentRequest": []
+                },
+                "duplicatePayment": {
+                    "commonRequest": [],
+                    "queryRequest": [],
+                    "paymentRequest": [],
+                    "orderRequest": []
+                },
+                "validatePayment": {
+                    "commonRequest": [],
+                    "paymentRequest": []
+                },
+                "reactivateToken": {
+                    "commonRequest": []
+                },
+                "verifyThreeDSEnrollment": {
+                    "commonRequest": [],
+                    "paymentRequest": [],
+                    "cardRequest": [],
+                    "techRequest": []
+                },
+                "checkThreeDSAuthentication": {
+                    "commonRequest": [],
+                    "threeDSRequest": []
+                },
+                "capturePayment": {
+                    "commonRequest": [],
+                    "captureRequest": []
+                }
+            },
+
+            requestObjects: ["commonRequest", "paymentRequest", "cardRequest", "orderRequest", "threeDSRequest", "subscriptionRequest", "queryRequest", "customerRequest-billingDetails", "customerRequest-shippingDetails", "techRequest", "captureRequest"],
+
+            check: function (operation) {
+                var operationsAllowed = this.allowedOperations[operation];
+
+                //Clean all request objects
+                $.each(this.requestObjects, function (index, value) {
+                    $("#" + value).hide();
+                });
+
+                $.each(this.allowedOperations, function (operationName, requestObjects) {
+                    if (operationName == operation) {
+                        for (var requestName in requestObjects) {
+                            console.log(requestName);
+                            $("#" + requestName).show();
+                        }
+                    }
+                });
+                console.log("IN!");
+            }
+        }
     </script>
 </body>
 

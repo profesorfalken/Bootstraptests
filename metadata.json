@@ -1,0 +1,24 @@
+{
+    "ticketInfo": {
+        "fr_FR": {
+            "fields": [{
+                "label": "Date / Heure",
+                "content": "05-09-2014 / 16:33:47 (GMT+2)"
+            }, {
+                "label": "N° chèque / Organisme / Année / Valeur",
+                "content": "123456786 / 11223344 / 2015 / 60,00 EUR"
+            }],
+            "infoMessage": "Rappel : en cas de trop perçu versé par e-Chèques-Vacances, le remboursement de l’excédent est soumis aux Conditions Générales de Vente du commerçant."
+        },
+        "en_EN": {
+            "fields": [{
+                "label": "Date / Time",
+                "content": "05-09-2014 / 16:33:47 (GMT+2)"
+            }, {
+                "label": "N° check / Organism / Year / Value",
+                "content": "123456786 / 11223344 / 2015 / 60.00 EUR"
+            }],
+            "infoMessage": "Reminder : in the cas of overpay by e-Chèques-Vacances, the refund of the exceeded amount depends on the Selling General Conditions of the merchant."
+        }
+    }
+}

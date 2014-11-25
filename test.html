@@ -9,7 +9,7 @@
     <title>Page de paiment de test pour Lyra</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/spacelab/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,6 +21,7 @@
     <style>
         body {
             padding-top: 70px;
+            padding-bottom: 70px;
         }
         .navbar-buttonex {
             position: absolute;
@@ -34,1215 +35,948 @@
 
 <body>
 
-    <div class="container">
-
-        <!-- Static navbar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">TEST</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Payzen<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
-                                </li>
-                                <li><a href="#">Sonde Interne</a>
-                                </li>
-                                <li><a href="#">AmexGlobal Test</a>
-                                </li>
-                                <li><a href="#">PIT Testing</a>
-                                </li>
-                                <li><a href="#">Cof3XCB Test</a>
-                                </li>
-                                <li><a href="#">GICC Test</a>
-                                </li>
-                                <li><a href="#">Risk Test</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SystemPay<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">BP Test</a>
-                                </li>
-                                <li><a href="#">CE Test</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Brasil<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                        </li>
-                        <li><a href="#">Sonde Interne</a>
-                        </li>
-                        <li><a href="#">ClearSale Test</a>
-                        </li>
-                        </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Innocard<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
-                                </li>
-                                <li><a href="#">Prod</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Edel<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
-                                </li>
-                                <li><a href="#">Prod</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mail For Good<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
-                                </li>
-                                <li><a href="#">Prod</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">India<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
-                                </li>
-                                <li><a href="#">Prod</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chili<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
-                                </li>
-                                <li><a href="#">Prod</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-
-
-
-        </nav>
-    </div>
-
     <!-- /container -->
-    <div class="container theme-showcase" role="main">
+    <div class="container">
         <form id="order" method="post" action="https://payzen.lyra-labs.fr/vads-test/order.do" role="form" class="form-default">
-            <input type="hidden" name="action" value="execute">
 
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Configuration</h3>
+            <!-- Static navbar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">TEST</a>
                     </div>
-                    <div class="panel-body">
-                        <div class="col-md-4 form-group">
-                            <label for="version">
-                                Version
-                            </label>
-                            <div class="btn-group" role="group" aria-label="...">
-                                <select class="form-control" name="version" id="version">
-                                    <option value="V1">V1</option>
-                                    <option value="V2">V2</option>
-                                    <option value="01">01</option>
-                                    <option value="V 1">V 1</option>
-                                    <option value=""></option>
-                                    <option value="0123456789">0123456789</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" name="noSubmit" value="on" id="noSubmit">Pas de soumission auto (debug)
-                            </label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <label class="checkbox-inline">
-                                <input type="checkbox" name="addSignature" value="on">Ajouter la signature en param
-                            </label>
-                        </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Payzen<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
+                                    </li>
+                                    <li><a href="#">Sonde Interne</a>
+                                    </li>
+                                    <li><a href="#">AmexGlobal Test</a>
+                                    </li>
+                                    <li><a href="#">PIT Testing</a>
+                                    </li>
+                                    <li><a href="#">Cof3XCB Test</a>
+                                    </li>
+                                    <li><a href="#">GICC Test</a>
+                                    </li>
+                                    <li><a href="#">Risk Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SystemPay<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">BP Test</a>
+                                    </li>
+                                    <li><a href="#">CE Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Brasil<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Sonde Interne</a>
+                                    </li>
+                                    <li><a href="#">ClearSale Test</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Innocard<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
+                                    </li>
+                                    <li><a href="#">Prod</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Edel<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
+                                    </li>
+                                    <li><a href="#">Prod</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mail For Good<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
+                                    </li>
+                                    <li><a href="#">Prod</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">India<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
+                                    </li>
+                                    <li><a href="#">Prod</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chili<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="https://payzen.lyra-labs.fr/vads-test/order.do?config=payzen_test">Test</a>
+                                    </li>
+                                    <li><a href="#">Prod</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
                     </div>
+                    <!--/.nav-collapse -->
                 </div>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Acces Plateforme</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-3 form-group">
-                            <label for="url">Url page paiement (V1,V2)</label>
-                            <input type="text" class="form-control" name="url" value="" id="url" placeholder="Enter transactionId">
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="siteId">Identifiant site (V1,V2)</label>
-                            <input type="key" class="form-control" name="siteId" value="" id="siteId" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="key">Clef de codage (V1,V2)</label>
-                            <input type="text" class="form-control" name="key" value="" id="key" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-3 form-group">
-                            <label for="ctxMode">Contexte (V1,V2)</label>
-                            <select class="col-md-6 form-control" name="ctxMode" id="ctxMode">
-                                <option value="PRODUCTION">PRODUCTION</option>
-                                <option value="TEST">TEST</option>
-                                <option value="PROD">PROD</option>
-                                <option value="TESTING">TESTING</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Infos Transaction</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-6 form-group">
-                            <label for="transId">Transaction Id (V1,V2)</label>
-                            <input type="text" class="form-control" name="transId" value="" id="transId" placeholder="Enter transactionId">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="date">Date du paiement (V1,V2)</label>
-                            <input type="text" class="form-control" name="date" value="" id="date" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="amount">Montant de la commande (V1,V2)</label>
-                            <input type="text" class="form-control" name="amount" value="" id="amount" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="currency">Devise (V1,V2)</label>
-                            <input type="text" class="form-control" name="currency" value="" id="currency" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="captureDelay">Délai remise (V1,V2)</label>
-                            <input type="test" class="form-control" ame="captureDelay" value="" id="captureDelay" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="paymentConfig">PaymentConfig (V1,V2)</label>
-                            <input type="text" class="form-control" name="paymentConfig" value="" id="paymentConfig" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="text">Source du paiement (V1,V2)</label>
-                            <select class="col-md-6 form-control" name="paymentSrc" id="paymentSrc">
-                                <option value=""></option>
-                                <option value="BO">BO</option>
-                                <option value="MOTO">MOTO</option>
-                                <option value="CC">CC</option>
-                                <option value="CPWS">CPWS</option>
-                                <option value="TK">TK</option>
-                                <option value="OTHER">OTHER</option>
-                                <option value="ERROR">ERROR</option>
-                                <option value="null">null</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Page action (V2) 123</label>
-                            <select class="form-control" name="pageAction" id="pageAction">
-                                <option value="PAYMENT">PAYMENT</option>
-                                <option value="REGISTER">REGISTER</option>
-                                <option value="REGISTER_UPDATE">REGISTER_UPDATE</option>
-                                <option value="REGISTER_PAY">REGISTER_PAY</option>
-                                <option value="REGISTER_UPDATE_PAY">REGISTER_UPDATE_PAY</option>
-                                <option value="REGISTER_SUBSCRIBE">REGISTER_SUBSCRIBE</option>
-                                <option value="REGISTER_PAY_SUBSCRIBE">REGISTER_PAY_SUBSCRIBE</option>
-                                <option value="ASK_REGISTER_PAY">ASK_REGISTER_PAY</option>
-                                <option value="SUBSCRIBE">SUBSCRIBE</option>
-                                <option value="ERROR">ERROR</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="validationMode">Mode de validation (V1,V2)</label>
-                            <input type="text" class="form-control" name="validationMode" value="" id="validationMode" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="stepUpData">Paramètres de step up(V2)</label>
-                            <input type="text" class="form-control" name="stepUpData" value="" id="stepUpData" placeholder="Enter password">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Personnalisation de la page de paiement</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-6 form-group">
-                            <label for="language">Langue (V1,V2)</label>
-                            <input type="text" class="form-control" name="language" value="" id="language" placeholder="Enter transactionId">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="availableLocales">Locales disponibles (V2)</label>
-                            <input type="text" class="form-control" name="availableLocales" value="" id="availableLocales" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shopName">Libellé marchand (V2)</label>
-                            <input type="text" class="form-control" name="shopName" value="" id="shopName" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shopUrl">URL marchand (V2)</label>
-                            <input type="text" class="form-control" name="shopUrl" value="" id="shopUrl" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="themeConfig">Configuration thème (V1,V2)</label>
-                            <input type="test" class="form-control" ame="themeConfig" value="" id="themeConfig" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="paymentMeans">Moyens de paiment (V1,V2)</label>
-                            <input type="text" class="form-control" name="paymentMeans" value="" id="paymentMeans" placeholder="Enter password">
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <span class="clearfix" />
-
-            <div class="col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Infos Client</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-6 form-group">
-                            <label for="email">Id sur le site commerçant (V1,V2)</label>
-                            <input type="text" class="form-control" name="custId" value="" id="custId" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Identifiant paiement 1 clic (V2)</label>
-                            <input type="text" class="form-control" name="identifierId" value="" id="identifierId" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="email">Nom complet du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custName" value="" id="custName" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Nom du client (V2)</label>
-                            <input type="text" class="form-control" name="custLastName" value="" id="custLastName" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="email">Prénom du client (V2)</label>
-                            <input type="text" class="form-control" name="custFirstName" value="" id="custFirstName" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="custStatus">Qualité (V2)</label>
-                            <select class="form-control" name="custStatus" id="custStatus">
-                                <option value=""></option>
-                                <option value="PRIVATE">PRIVATE</option>
-                                <option value="COMPANY">COMPANY</option>
-                                <option value="INVALID">INVALID</option>
-                            </select>
-                        </div>
-
-                        <div class="col-md-6 form-group">
-                            <label for="custTitle">Titre du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custTitle" value="" id="custTitle" placeholder="Enter email">
-                        </div>
-
-                        <div class="col-md-6 form-group">
-                            <label for="email">Numéro d'Adresse du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custAddressNumber" value="" id="custAddressNumber" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Adresse du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custAddress" value="" id="custAddress" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">District du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custDistrict" value="" id="custDistrict" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Code postal du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custZIP" value="" id="custZIP" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Ville du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custCity" value="" id="custCity" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Etat du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custState" value="" id="custState" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Pays du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custCountry" value="" id="custCountry" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Email du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custMail" value="" id="custMail" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Téléphone du client (V1,V2)</label>
-                            <input type="text" class="form-control" name="custPhone" value="" id="custPhone" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Téléphone portable du client (V1,V2)</label>
-                            <input type="text" class="form-control" nname="custCellPhone" value="" id="custCellPhone" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Informations utilisateur (V1,V2)</label>
-                            <input type="text" class="form-control" name="userInfo" value="" id="userInfo" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Données d'authentification (V2)</label>
-                            <input type="text" class="form-control" name="authenticationData" value="" id="authenticationData" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="pwd">Raison sociale (V2)</label>
-                            <input type="text" class="form-control" name="custLegalName" value="" id="custLegalName" placeholder="Enter password">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Infos Livraison</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-6 form-group">
-                            <label for="shipToName">Nom complet de la livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToName" value="" id="shipToName" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToLastName">Nom du client de la livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToLastName" value="" id="shipToLastName" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToFirstName">Prénom du client de la livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToFirstName" value="" id="shipToFirstName" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToStatus">Qualité (V2)</label>
-                            <select class="form-control" name="shipToStatus" id="shipToStatus">
-                                <option value=""></option>
-                                <option value="PRIVATE">PRIVATE</option>
-                                <option value="COMPANY">COMPANY</option>
-                                <option value="INVALID">INVALID</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToStreetNumber">Numéro d'Adresse livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToStreetNumber" value="" id="shipToStreetNumber" placeholder="Enter email">
-                        </div>
-
-                        <div class="col-md-6 form-group">
-                            <label for="shipToStreet">Adresse livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToStreet" value="" id="shipToStreet" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToStreet2">Adresse livraison 2 (V2)</label>
-                            <input type="text" class="form-control" name="shipToStreet2" value="" id="shipToStreet2" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToDistrict">District livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToDistrict" value="" id="shipToDistrict" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToCity">Ville livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToCity" value="" id="shipToCity" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToZip">Code postal livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToZip" value="" id="shipToZip" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToState">Etat livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToState" value="" id="shipToState" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToCountry">Pays livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToCountry" value="" id="shipToCountry" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToPhoneNum">Téléphone livraison (V2)</label>
-                            <input type="text" class="form-control" name="shipToPhoneNum" value="" id="shipToPhoneNum" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToType">Type (V2)</label>
-                            <select class="form-control" name="shipToType" id="shipToType">
-                                <option value=""></option>
-                                <option value="RECLAIM_IN_SHOP">RECLAIM_IN_SHOP</option>
-                                <option value="RELAY_POINT">RELAY_POINT</option>
-                                <option value="RECLAIM_IN_STATION">RECLAIM_IN_STATION</option>
-                                <option value="PACKAGE_DELIVERY_COMPANY">PACKAGE_DELIVERY_COMPANY</option>
-                                <option value="ETICKET">ETICKET</option>
-                                <option value="INVALID">INVALID</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToSpeed">Rapidité (V2)</label>
-                            <select class="form-control" name="shipToSpeed" id="shipToSpeed">
-                                <option value=""></option>
-                                <option value="STANDARD">STANDARD</option>
-                                <option value="EXPRESS">EXPRESS</option>
-                                <option value="INVALID">INVALID</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToDeliveryCompanyName">Transporteur (V2)</label>
-                            <input type="text" class="form-control" name="shipToDeliveryCompanyName" value="" id="shipToDeliveryCompanyName" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToUserInfo">Informations utilisateur (V2)</label>
-                            <input type="text" class="form-control" name="shipToUserInfo" value="" id="shipToUserInfo" placeholder="Enter password">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="shipToLegalName">Raison sociale (V2)</label>
-                            <input type="text" class="form-control" name="shipToLegalName" value="" id="shipToLegalName" placeholder="Enter password">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
+            </nav>
     </div>
 
+    <div class="container" role="main">
+        <input type="hidden" name="action" value="execute">
 
-
-    <fieldset>
-        <legend accesskey="t">Infos <span class="accessKeyTip">t</span>ransaction</legend>
-        <div class="paramV1 paramV2">
-            <label>Transaction Id (V1,V2)</label>
-            <input type="text" name="transId" value="" id="transId" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Date du paiement (V1,V2)</label>
-            <input type="text" name="date" value="" id="date" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Montant de la commande (V1,V2)</label>
-            <input type="text" name="amount" value="" id="amount" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Devise (V1,V2)</label>
-            <input type="text" name="currency" value="" id="currency" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Délai remise (V1,V2)</label>
-            <input type="text" name="captureDelay" value="" id="captureDelay" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>PaymentConfig (V1,V2)</label>
-            <input type="text" name="paymentConfig" value="" id="paymentConfig" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Source du paiement (V1,V2)</label>
-            <select name="paymentSrc" id="paymentSrc">
-                <option value=""></option>
-                <option value="BO">BO</option>
-                <option value="MOTO">MOTO</option>
-                <option value="CC">CC</option>
-                <option value="CPWS">CPWS</option>
-                <option value="TK">TK</option>
-                <option value="OTHER">OTHER</option>
-                <option value="ERROR">ERROR</option>
-                <option value="null">null</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Page action (V2) 123</label>
-            <select name="pageAction" id="pageAction">
-                <option value="PAYMENT">PAYMENT</option>
-                <option value="REGISTER">REGISTER</option>
-                <option value="REGISTER_UPDATE">REGISTER_UPDATE</option>
-                <option value="REGISTER_PAY">REGISTER_PAY</option>
-                <option value="REGISTER_UPDATE_PAY">REGISTER_UPDATE_PAY</option>
-                <option value="REGISTER_SUBSCRIBE">REGISTER_SUBSCRIBE</option>
-                <option value="REGISTER_PAY_SUBSCRIBE">REGISTER_PAY_SUBSCRIBE</option>
-                <option value="ASK_REGISTER_PAY">ASK_REGISTER_PAY</option>
-                <option value="SUBSCRIBE">SUBSCRIBE</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Mode de validation (V1,V2)</label>
-            <input type="text" class="form-control" name="validationMode" value="" id="validationMode" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Paramètres de step up(V2)</label>
-            <input type="text" name="stepUpData" value="" id="stepUpData" class="appar">
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend accesskey="c">Infos <span class="accessKeyTip">c</span>lient</legend>
-        <div class="paramV1 paramV2">
-            <label>Id sur le site commerçant (V1,V2)</label>
-            <input type="text" name="custId" value="" id="custId" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Identifiant paiement 1 clic (V2)</label>
-            <input type="text" name="identifierId" value="" id="identifierId" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Nom complet du client (V1,V2)</label>
-            <input type="text" name="custName" value="" id="custName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Nom du client (V2)</label>
-            <input type="text" name="custLastName" value="" id="custLastName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Prénom du client (V2)</label>
-            <input type="text" name="custFirstName" value="" id="custFirstName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Qualité (V2)</label>
-            <select name="custStatus" id="custStatus">
-                <option value=""></option>
-                <option value="PRIVATE">PRIVATE</option>
-                <option value="COMPANY">COMPANY</option>
-                <option value="INVALID">INVALID</option>
-            </select>
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Titre du client (V1,V2)</label>
-            <input type="text" name="custTitle" value="" id="custTitle" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Numéro d'Adresse du client (V1,V2)</label>
-            <input type="text" name="custAddressNumber" value="" id="custAddressNumber" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Adresse du client (V1,V2)</label>
-            <input type="text" name="custAddress" value="" id="custAddress" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>District du client (V1,V2)</label>
-            <input type="text" name="custDistrict" value="" id="custDistrict" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Code postal du client (V1,V2)</label>
-            <input type="text" name="custZIP" value="" id="custZIP" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Ville du client (V1,V2)</label>
-            <input type="text" name="custCity" value="" id="custCity" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Etat du client (V1,V2)</label>
-            <input type="text" name="custState" value="" id="custState" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Pays du client (V1,V2)</label>
-            <input type="text" name="custCountry" value="" id="custCountry" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Email du client (V1,V2)</label>
-            <input type="text" name="custMail" value="" id="custMail" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Téléphone du client (V1,V2)</label>
-            <input type="text" name="custPhone" value="" id="custPhone" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Téléphone portable du client (V1,V2)</label>
-            <input type="text" name="custCellPhone" value="" id="custCellPhone" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Informations utilisateur (V1,V2)</label>
-            <input type="text" name="userInfo" value="" id="userInfo" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Données d'authentification (V2)</label>
-            <input type="text" name="authenticationData" value="" id="authenticationData" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Raison sociale (V2)</label>
-            <input type="text" name="custLegalName" value="" id="custLegalName" class="appar">
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend accesskey="s">Paiement <span class="accessKeyTip">s</span>ilencieux</legend>
-        <div class="paramV2">
-            <label>Numéro de carte (V2)</label>
-            <input type="text" name="cardNumber" value="" id="cardNumber" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Mois d'expiration (V2)</label>
-            <input type="text" name="expiryMonth" value="" id="expiryMonth" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Année d'expiration (V2)</label>
-            <input type="text" name="expiryYear" value="" id="expiryYear" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Jour naissance (V1,V2)</label>
-            <input type="text" name="birthDay" value="" id="birthDay" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Mois naissance (V2)</label>
-            <input type="text" name="birthMonth" value="" id="birthMonth" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Année naissance (V2)</label>
-            <input type="text" name="birthYear" value="" id="birthYear" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Cvv (V2)</label>
-            <input type="text" name="cvv" value="" id="cvv" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Secure MPI (V2)</label>
-            <select name="secureMpi" id="secureMpi">
-                <option value=""></option>
-                <option value="0">MPI Lyra</option>
-                <option value="1">MPI Integrateur</option>
-                <option value="2">Forcer désactiver 3DS</option>
-                <option value="3">ERROR</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Secure Enrolled (V2)</label>
-            <select name="secureEnrolled" id="secureEnrolled">
-                <option value=""></option>
-                <option value="Y">Y</option>
-                <option value="N">N</option>
-                <option value="U">U</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Secure ECI (V2)</label>
-            <input type="text" name="secureEci" value="" id="secureEci" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Secure XID (V2)</label>
-            <input type="text" name="secureXid" value="" id="secureXid" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Secure CAVV (V2)</label>
-            <input type="text" name="secureCavv" value="" id="secureCavv" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Secure CAVV Algorithm (V2)</label>
-            <select name="secureCavvAlgorithm" id="secureCavvAlgorithm">
-                <option value=""></option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Secure Status (V2)</label>
-            <select name="secureStatus" id="secureStatus">
-                <option value=""></option>
-                <option value="Y">Y</option>
-                <option value="N">N</option>
-                <option value="U">U</option>
-                <option value="A">A</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend accesskey="r">Paiement <span class="accessKeyTip">r</span>écurrent</legend>
-        <div class="paramV2">
-            <label>Identifiant de recurrence (V2)</label>
-            <input type="text" name="subId" value="" id="subId" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Description de récurrence (V2)</label>
-            <input type="text" name="subDesc" value="" id="subDesc" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Montant de la récurrence (V2)</label>
-            <input type="text" name="subAmount" value="" id="subAmount" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Montant initial de la récurrence (V2)</label>
-            <input type="text" name="subInitAmount" value="" id="subInitAmount" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Nombre de récurrences initiales (V2)</label>
-            <input type="text" name="subInitAmountNumber" value="" id="subInitAmountNumber" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Date effet récurrence (V2)</label>
-            <input type="text" name="subEffectDate" value="" id="subEffectDate" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Devise de la récurrence (V2)</label>
-            <input type="text" name="subCurrency" value="" id="subCurrency" class="appar">
-        </div>
-    </fieldset>
-    <fieldset>
-        <legend accesskey="p"><span class="accessKeyTip">P</span>ersonnalisation de la page de paiement</legend>
-        <div class="paramV1 paramV2">
-            <label>Langue (V1,V2)</label>
-            <input type="text" name="language" value="" id="language" class="appar">
-            <!--<select name="language" id="language"><option value=""></option>
-					<option value="fr">fr</option>
-					<option value="en">en</option>
-					<option value="pt">pt</option>
-					<option value="nl">nl</option>
-					<option value="ja">ja</option>
-					<option value="de">de</option>
-					<option value="it">it</option>
-					<option value="es">es</option>
-					<option value="zh">zh</option>
-					<option value="XX">XX</option>
-					<option value="FRA">FRA</option>
-					<option value="12">12</option></select>-->
-        </div>
-        <div class="paramV2">
-            <label>Locales disponibles (V2)</label>
-            <input type="text" name="availableLocales" value="" id="availableLocales" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Libellé marchand (V2)</label>
-            <input type="text" name="shopName" value="" id="shopName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>URL marchand (V2)</label>
-            <input type="text" name="shopUrl" value="" id="shopUrl" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Configuration thème (V1,V2)</label>
-            <input type="text" name="themeConfig" value="" id="themeConfig" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Moyens de paiment (V1,V2)</label>
-            <input type="text" name="paymentMeans" value="" id="paymentMeans" class="appar">
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <legend accesskey="l">Infos <span class="accessKeyTip">l</span>ivraison</legend>
-        <div class="paramV2">
-            <label>Nom complet de la livraison (V2)</label>
-            <input type="text" name="shipToName" value="" id="shipToName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Nom du client de la livraison (V2)</label>
-            <input type="text" name="shipToLastName" value="" id="shipToLastName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Prénom du client de la livraison (V2)</label>
-            <input type="text" name="shipToFirstName" value="" id="shipToFirstName" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Qualité (V2)</label>
-            <select name="shipToStatus" id="shipToStatus">
-                <option value=""></option>
-                <option value="PRIVATE">PRIVATE</option>
-                <option value="COMPANY">COMPANY</option>
-                <option value="INVALID">INVALID</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Numéro d'Adresse livraison (V2)</label>
-            <input type="text" name="shipToStreetNumber" value="" id="shipToStreetNumber" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Adresse livraison (V2)</label>
-            <input type="text" name="shipToStreet" value="" id="shipToStreet" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Adresse livraison 2 (V2)</label>
-            <input type="text" name="shipToStreet2" value="" id="shipToStreet2" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>District livraison (V2)</label>
-            <input type="text" name="shipToDistrict" value="" id="shipToDistrict" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Ville livraison (V2)</label>
-            <input type="text" name="shipToCity" value="" id="shipToCity" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Code postal livraison (V2)</label>
-            <input type="text" name="shipToZip" value="" id="shipToZip" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Etat livraison (V2)</label>
-            <input type="text" name="shipToState" value="" id="shipToState" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Pays livraison (V2)</label>
-            <input type="text" name="shipToCountry" value="" id="shipToCountry" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Téléphone livraison (V2)</label>
-            <input type="text" name="shipToPhoneNum" value="" id="shipToPhoneNum" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Type (V2)</label>
-            <select name="shipToType" id="shipToType">
-                <option value=""></option>
-                <option value="RECLAIM_IN_SHOP">RECLAIM_IN_SHOP</option>
-                <option value="RELAY_POINT">RELAY_POINT</option>
-                <option value="RECLAIM_IN_STATION">RECLAIM_IN_STATION</option>
-                <option value="PACKAGE_DELIVERY_COMPANY">PACKAGE_DELIVERY_COMPANY</option>
-                <option value="ETICKET">ETICKET</option>
-                <option value="INVALID">INVALID</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Rapidité (V2)</label>
-            <select name="shipToSpeed" id="shipToSpeed">
-                <option value=""></option>
-                <option value="STANDARD">STANDARD</option>
-                <option value="EXPRESS">EXPRESS</option>
-                <option value="INVALID">INVALID</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Transporteur (V2)</label>
-            <input type="text" name="shipToDeliveryCompanyName" value="" id="shipToDeliveryCompanyName" class="appar">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Configuration</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-4 form-group">
+                        <label for="version">
+                            Version
+                        </label>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <select class="form-control" name="version" id="version">
+                                <option value="V1">V1</option>
+                                <option value="V2">V2</option>
+                                <option value="01">01</option>
+                                <option value="V 1">V 1</option>
+                                <option value=""></option>
+                                <option value="0123456789">0123456789</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="noSubmit" value="on" id="noSubmit">Pas de soumission auto (debug)
+                        </label>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="addSignature" value="on">Ajouter la signature en param
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Acces Plateforme</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-3 form-group">
+                        <label for="url">Url page paiement (V1,V2)</label>
+                        <input type="text" class="form-control" name="url" value="" id="url" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="siteId">Identifiant site (V1,V2)</label>
+                        <input type="key" class="form-control" name="siteId" value="" id="siteId" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="key">Clef de codage (V1,V2)</label>
+                        <input type="text" class="form-control" name="key" value="" id="key" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="ctxMode">Contexte (V1,V2)</label>
+                        <select class="col-md-6 form-control" name="ctxMode" id="ctxMode">
+                            <option value="PRODUCTION">PRODUCTION</option>
+                            <option value="TEST">TEST</option>
+                            <option value="PROD">PROD</option>
+                            <option value="TESTING">TESTING</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="paramV2">
-            <label>Informations utilisateur (V2)</label>
-            <input type="text" name="shipToUserInfo" value="" id="shipToUserInfo" class="appar">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Infos Transaction</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-3 form-group">
+                        <label for="transId">Transaction Id (V1,V2)</label>
+                        <input type="text" class="form-control" name="transId" value="" id="transId" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="date">Date du paiement (V1,V2)</label>
+                        <input type="text" class="form-control" name="date" value="" id="date" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="amount">Montant de la commande (V1,V2)</label>
+                        <input type="text" class="form-control" name="amount" value="" id="amount" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="currency">Devise (V1,V2)</label>
+                        <input type="text" class="form-control" name="currency" value="" id="currency" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="captureDelay">Délai remise (V1,V2)</label>
+                        <input type="test" class="form-control" ame="captureDelay" value="" id="captureDelay" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="paymentConfig">PaymentConfig (V1,V2)</label>
+                        <input type="text" class="form-control" name="paymentConfig" value="" id="paymentConfig" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="text">Source du paiement (V1,V2)</label>
+                        <select class="col-md-6 form-control" name="paymentSrc" id="paymentSrc">
+                            <option value=""></option>
+                            <option value="BO">BO</option>
+                            <option value="MOTO">MOTO</option>
+                            <option value="CC">CC</option>
+                            <option value="CPWS">CPWS</option>
+                            <option value="TK">TK</option>
+                            <option value="OTHER">OTHER</option>
+                            <option value="ERROR">ERROR</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label>Page action (V2) 123</label>
+                        <select class="form-control" name="pageAction" id="pageAction">
+                            <option value="PAYMENT">PAYMENT</option>
+                            <option value="REGISTER">REGISTER</option>
+                            <option value="REGISTER_UPDATE">REGISTER_UPDATE</option>
+                            <option value="REGISTER_PAY">REGISTER_PAY</option>
+                            <option value="REGISTER_UPDATE_PAY">REGISTER_UPDATE_PAY</option>
+                            <option value="REGISTER_SUBSCRIBE">REGISTER_SUBSCRIBE</option>
+                            <option value="REGISTER_PAY_SUBSCRIBE">REGISTER_PAY_SUBSCRIBE</option>
+                            <option value="ASK_REGISTER_PAY">ASK_REGISTER_PAY</option>
+                            <option value="SUBSCRIBE">SUBSCRIBE</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="validationMode">Mode de validation (V1,V2)</label>
+                        <input type="text" class="form-control" name="validationMode" value="" id="validationMode" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="stepUpData">Paramètres de step up(V2)</label>
+                        <input type="text" class="form-control" name="stepUpData" value="" id="stepUpData" placeholder="">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="paramV2">
-            <label>Raison sociale (V2)</label>
-            <input type="text" name="shipToLegalName" value="" id="shipToLegalName" class="appar">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Personnalisation de la page de paiement</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-3 form-group">
+                        <label for="language">Langue (V1,V2)</label>
+                        <input type="text" class="form-control" name="language" value="" id="language" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="availableLocales">Locales disponibles (V2)</label>
+                        <input type="text" class="form-control" name="availableLocales" value="" id="availableLocales" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="shopName">Libellé marchand (V2)</label>
+                        <input type="text" class="form-control" name="shopName" value="" id="shopName" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="shopUrl">URL marchand (V2)</label>
+                        <input type="text" class="form-control" name="shopUrl" value="" id="shopUrl" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="themeConfig">Configuration thème (V1,V2)</label>
+                        <input type="test" class="form-control" ame="themeConfig" value="" id="themeConfig" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="paymentMeans">Moyens de paiment (V1,V2)</label>
+                        <input type="text" class="form-control" name="paymentMeans" value="" id="paymentMeans" placeholder="">
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </fieldset>
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Paiement Silencieux</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6 form-group">
+                        <label for="cardNumber">Numéro de carte (V2)</label>
+                        <input type="text" class="form-control" name="cardNumber" value="" id="cardNumber" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="expiryMonth">Mois d'expiration (V2)</label>
+                        <input type="text" class="form-control" name="expiryMonth" value="" id="expiryMonth" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="expiryYear">Année d'expiration (V2)</label>
+                        <input type="text" class="form-control" name="expiryYear" value="" id="expiryYear" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="birthMonth">Jour naissance (V1,V2)</label>
+                        <input type="text" class="form-control" name="birthMonth" value="" id="birthMonth" placeholder="">
+                    </div>
 
-    <fieldset>
-        <legend accesskey="b">Retour <span class="accessKeyTip">b</span>outique</legend>
-        <div class="paramV1 paramV2">
-            <label>URL serveur (V1,V2)</label>
-            <input type="text" name="urlCheck" value="" id="urlCheck" class="appar">
+                    <div class="col-md-6 form-group">
+                        <label for="birthYear">Mois naissance (V2)</label>
+                        <input type="text" class="form-control" name="birthYear" value="" id="birthYear" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="birthYear">Année naissance (V2)</label>
+                        <input type="text" class="form-control" name="birthYear" value="" id="birthYear" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="cvv">Cvv (V2)</label>
+                        <input type="text" class="form-control" name="cvv" value="" id="cvv" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="secureMpi">Secure MPI (V2)</label>
+                        <select class="form-control" name="secureMpi" id="secureMpi">
+                            <option value=""></option>
+                            <option value="PRIVATE">PRIVATE</option>
+                            <option value="COMPANY">COMPANY</option>
+                            <option value="INVALID">INVALID</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToStatus">Secure Enrolled (V2</label>
+                        <select class="form-control" name="secureEnrolled" id="secureEnrolled">
+                            <option value=""></option>
+                            <option value="Y">Y</option>
+                            <option value="N">N</option>
+                            <option value="U">U</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="secureEci">Secure ECI (V2)</label>
+                        <input type="text" class="form-control" name="secureEci" value="" id="secureEci" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="secureXid">Secure XID (V2)</label>
+                        <input type="text" class="form-control" name="secureXid" value="" id="secureXid" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="secureCavv">Secure CAVV (V2)</label>
+                        <input type="text" class="form-control" name="secureCavv" value="" id="secureCavv" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="secureCavvAlgorithm">Secure CAVV Algorithm (V2)</label>
+                        <select class="form-control" name="secureCavvAlgorithm" id="secureCavvAlgorithm">
+                            <option value=""></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="secureStatus">Secure Status (V2)</label>
+                        <select class="form-control" name="secureStatus" id="secureStatus">
+                            <option value=""></option>
+                            <option value="Y">Y</option>
+                            <option value="N">N</option>
+                            <option value="U">U</option>
+                            <option value="A">A</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="paramV1 paramV2">
-            <label>URL de retour (V1,V2)</label>
-            <input type="text" name="returnUrl" value="" id="returnUrl" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>URL d'annulation (V1,V2)</label>
-            <input type="text" name="cancelUrl" value="" id="cancelUrl" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>URL d'erreur (V1,V2)</label>
-            <input type="text" name="errorUrl" value="" id="errorUrl" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>URL de succes (V1,V2)</label>
-            <input type="text" name="successUrl" value="" id="successUrl" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>URL de refus (V1,V2)</label>
-            <input type="text" name="refusedUrl" value="" id="refusedUrl" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Redirect success timeout (V1,V2)</label>
-            <input type="text" name="redirectSuccessTimeout" value="" id="redirectSuccessTimeout" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Redirect success message (V1,V2)</label>
-            <input type="text" name="redirectSuccessMessage" value="" id="redirectSuccessMessage" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Redirect error timeout (V1,V2)</label>
-            <input type="text" name="redirectErrorTimeout" value="" id="redirectErrorTimeout" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Redirect error message (V1,V2)</label>
-            <input type="text" name="redirectErrorMessage" value="" id="redirectErrorMessage" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Return get params (V1,V2)</label>
-            <input type="text" name="returnGetParams" value="" id="returnGetParams" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Return post params (V1,V2)</label>
-            <input type="text" name="returnPostParams" value="" id="returnPostParams" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Mode retour (V1,V2)</label>
-            <select name="returnMode" id="returnMode">
-                <option value=""></option>
-                <option value="POST">POST</option>
-                <option value="GET">GET</option>
-                <option value="NONE">NONE</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-    </fieldset>
 
-    <fieldset>
-        <legend>À trier</legend>
-        <div class="paramV1 paramV2">
-            <label>Identifiant commande (V1,V2)</label>
-            <input type="text" name="orderId" value="" id="orderId" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Option Cofinoga (V2)</label>
-            <input type="text" name="opCofinoga" value="" id="opCofinoga" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Option Cetelem (V2)</label>
-            <input type="text" name="opCetelem" value="" id="opCetelem" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Order info (V1,V2)</label>
-            <input type="text" name="orderInfo" value="" id="orderInfo" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Order info 2 (V1,V2)</label>
-            <input type="text" name="orderInfo2" value="" id="orderInfo2" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Order info 3 (V1,V2)</label>
-            <input type="text" name="orderInfo3" value="" id="orderInfo3" class="appar">
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Contrats (V1,V2)</label>
-            <input type="text" name="contracts" value="" id="contracts" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Mode action (V2)</label>
-            <select name="actionMode" id="actionMode">
-                <option value="INTERACTIVE">INTERACTIVE</option>
-                <option value="SILENT">SILENT</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Informations abstraites (V2)</label>
-            <select name="abstractInfo" id="abstractInfo">
-                <option value=""></option>
-                <option value="SRC_INFO">SRC_INFO</option>
-                <option value="SRC_HASH">SRC_HASH</option>
-                <option value="ERROR">ERROR</option>
-            </select>
-        </div>
-        <div class="paramV1 paramV2">
-            <label>Contribution (V1,V2)</label>
-            <input type="text" name="contrib" value="" id="contrib" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Token id (V2)</label>
-            <input type="text" name="tokenId" value="" id="tokenId" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Type du paiement (V2)</label>
-            <select name="paymentType" id="paymentType">
-                <option value=""></option>
-                <option value="BOL_AP">BOL_AP</option>
-                <option value="BOL_CH">BOL_CH</option>
-                <option value="BOL_DM">BOL_DM</option>
-                <option value="BOL_DMI">BOL_DMI</option>
-                <option value="BOL_DR">BOL_DR</option>
-                <option value="BOL_DS">BOL_DS</option>
-                <option value="BOL_DSI">BOL_DSI</option>
-                <option value="BOL_FAT">BOL_FAT</option>
-                <option value="BOL_LC">BOL_LC</option>
-                <option value="BOL_ME">BOL_ME</option>
-                <option value="BOL_NCC">BOL_NCC</option>
-                <option value="BOL_NCE">BOL_NCE</option>
-                <option value="BOL_NCI">BOL_NCI</option>
-                <option value="BOL_NCR">BOL_NCR</option>
-                <option value="BOL_ND">BOL_ND</option>
-                <option value="BOL_NP">BOL_NP</option>
-                <option value="BOL_NPR">BOL_NPR</option>
-                <option value="BOL_NS">BOL_NS</option>
-                <option value="BOL_PC">BOL_PC</option>
-                <option value="BOL_RC">BOL_RC</option>
-                <option value="BOL_TM">BOL_TM</option>
-                <option value="BOL_TS">BOL_TS</option>
-                <option value="OTHER">OTHER</option>
-                <option value="ERROR">ERROR</option>
-                <option value="null">null</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Requestor du paiement (V2)</label>
-            <select name="requestor" id="requestor">
-                <option value=""></option>
-                <option value="BANK">BANK</option>
-                <option value="MERCHANT">MERCHANT</option>
-                <option value="ERROR">ERROR</option>
-                <option value="null">null</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Option Payment (V2)</label>
-            <input type="text" name="paymentOptionCode" value="" id="paymentOptionCode" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Garantie sur transaction primaire (V2)</label>
-            <select name="riskPrimaryWarranty" id="riskPrimaryWarranty">
-                <option value=""></option>
-                <option value="DEFAULT">DEFAULT</option>
-                <option value="IGNORE">IGNORE</option>
-                <option value="CHECK">CHECK</option>
-                <option value="null">null</option>
-            </select>
-        </div>
-        <div class="paramV2">
-            <label>Platforme de paiement (V2)</label>
-            <select name="targetPtf" id="targetPtf">
-                <option value=""></option>
-                <option value="OLD">OLD</option>
-                <option value="NEW">NEW</option>
-            </select>
-        </div>
-    </fieldset>
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Paiement Récurrent</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6 form-group">
+                        <label for="subId">Identifiant de recurrence (V2)</label>
+                        <input type="text" class="form-control" name="subId" value="" id="subId" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="subDesc">Description de récurrence (V2)</label>
+                        <input type="text" class="form-control" name="subDesc" value="" id="subDesc" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="subAmount">Montant de la récurrence (V2)</label>
+                        <input type="text" class="form-control" name="subAmount" value="" id="subAmount" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="subInitAmount">Montant initial de la récurrence (V2)</label>
+                        <input type="text" class="form-control" name="subInitAmount" value="" id="subInitAmount" placeholder="">
+                    </div>
 
-    <fieldset>
-        <legend accesskey="n">Pa<span class="accessKeyTip">n</span>ier (V2)</legend>
-
-        <div class="paramV2">
-            <label>Montant des taxes</label>
-            <input type="text" name="taxAmount" value="" id="taxAmount" class="appar">
+                    <div class="col-md-6 form-group">
+                        <label for="subInitAmountNumber">Nombre de récurrences initiales (V2)</label>
+                        <input type="text" class="form-control" name="subInitAmountNumber" value="" id="subInitAmountNumber" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="subEffectDate">Date effet récurrence (V2)</label>
+                        <input type="text" class="form-control" name="subEffectDate" value="" id="subEffectDate" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="subCurrency">Devise de la récurrence (V2)</label>
+                        <input type="text" class="form-control" name="subCurrency" value="" id="subCurrency" placeholder="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="paramV2">
-            <label>Frais de port</label>
-            <input type="text" name="shippingAmount" value="" id="shippingAmount" class="appar">
-        </div>
-        <div class="paramV2">
-            <label>Montant de l'assurance</label>
-            <input type="text" name="insuranceAmount" value="" id="insuranceAmount" class="appar">
-        </div>
-    </fieldset>
 
-    <fieldset>
-        <legend accesskey="x">E<span class="accessKeyTip">x</span>tInfo (V2)</legend>
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Retour boutique</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-3 form-group">
+                        <label for="urlCheck">URL serveur (V1,V2)</label>
+                        <input type="text" class="form-control" name="urlCheck" value="" id="urlCheck" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="returnUrl">URL de retour (V1,V2)</label>
+                        <input type="text" class="form-control" name="returnUrl" value="" id="returnUrl" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="cancelUrl">URL d'annulation (V1,V2)</label>
+                        <input type="text" class="form-control" name="cancelUrl" value="" id="cancelUrl" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="errorUrl">URL d'erreur (V1,V2)</label>
+                        <input type="text" class="form-control" name="errorUrl" value="" id="errorUrl" placeholder="">
+                    </div>
 
-
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 0</label>
-            <input type="text" name="extInfoKey(key-0)" value="" id="extInfoKey(key-0)" class="appar">
+                    <div class="col-md-3 form-group">
+                        <label for="successUrl">URL de succes (V1,V2)</label>
+                        <input type="text" class="form-control" name="successUrl" value="" id="successUrl" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="refusedUrl">URL de refus (V1,V2)</label>
+                        <input type="text" class="form-control" name="refusedUrl" value="" id="refusedUrl" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="redirectSuccessTimeout">Redirect success timeout (V1,V2)</label>
+                        <input type="text" class="form-control" name="redirectSuccessTimeout" value="" id="redirectSuccessTimeout" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="redirectSuccessMessage">Redirect success message (V1,V2)</label>
+                        <input type="text" class="form-control" name="redirectSuccessMessage" value="" id="redirectSuccessMessage" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="redirectErrorTimeout">Redirect error timeout (V1,V2)</label>
+                        <input type="text" class="form-control" name="redirectErrorTimeout" value="" id="redirectErrorTimeout" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="redirectErrorMessage">Redirect error message (V1,V2)</label>
+                        <input type="text" class="form-control" name="redirectErrorMessage" value="" id="redirectErrorMessage" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="returnGetParams">Return get params (V1,V2)</label>
+                        <input type="text" class="form-control" name="returnGetParams" value="" id="returnGetParams" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="returnPostParams">Return post params (V1,V2)</label>
+                        <input type="text" class="form-control" name="returnPostParams" value="" id="returnPostParams" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="returnMode">Mode retour (V1,V2)</label>
+                        <select class="form-control" name="returnMode" id="returnMode">
+                            <option value=""></option>
+                            <option value="POST">POST</option>
+                            <option value="GET">GET</option>
+                            <option value="NONE">NONE</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 0</label>
-            <input type="text" name="extInfoValue(key-0)" value="" id="extInfoValue(key-0)" class="appar">
+
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Infos Client</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6 form-group">
+                        <label for="email">Id sur le site commerçant (V1,V2)</label>
+                        <input type="text" class="form-control" name="custId" value="" id="custId" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Identifiant paiement 1 clic (V2)</label>
+                        <input type="text" class="form-control" name="identifierId" value="" id="identifierId" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="email">Nom complet du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custName" value="" id="custName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Nom du client (V2)</label>
+                        <input type="text" class="form-control" name="custLastName" value="" id="custLastName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="email">Prénom du client (V2)</label>
+                        <input type="text" class="form-control" name="custFirstName" value="" id="custFirstName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="custStatus">Qualité (V2)</label>
+                        <select class="form-control" name="custStatus" id="custStatus">
+                            <option value=""></option>
+                            <option value="PRIVATE">PRIVATE</option>
+                            <option value="COMPANY">COMPANY</option>
+                            <option value="INVALID">INVALID</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="custTitle">Titre du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custTitle" value="" id="custTitle" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="email">Numéro d'Adresse du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custAddressNumber" value="" id="custAddressNumber" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Adresse du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custAddress" value="" id="custAddress" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">District du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custDistrict" value="" id="custDistrict" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Code postal du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custZIP" value="" id="custZIP" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Ville du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custCity" value="" id="custCity" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Etat du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custState" value="" id="custState" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Pays du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custCountry" value="" id="custCountry" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Email du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custMail" value="" id="custMail" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Téléphone du client (V1,V2)</label>
+                        <input type="text" class="form-control" name="custPhone" value="" id="custPhone" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Téléphone portable du client (V1,V2)</label>
+                        <input type="text" class="form-control" nname="custCellPhone" value="" id="custCellPhone" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Informations utilisateur (V1,V2)</label>
+                        <input type="text" class="form-control" name="userInfo" value="" id="userInfo" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Données d'authentification (V2)</label>
+                        <input type="text" class="form-control" name="authenticationData" value="" id="authenticationData" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="pwd">Raison sociale (V2)</label>
+                        <input type="text" class="form-control" name="custLegalName" value="" id="custLegalName" placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Infos Livraison</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6 form-group">
+                        <label for="shipToName">Nom complet de la livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToName" value="" id="shipToName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToLastName">Nom du client de la livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToLastName" value="" id="shipToLastName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToFirstName">Prénom du client de la livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToFirstName" value="" id="shipToFirstName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToStatus">Qualité (V2)</label>
+                        <select class="form-control" name="shipToStatus" id="shipToStatus">
+                            <option value=""></option>
+                            <option value="PRIVATE">PRIVATE</option>
+                            <option value="COMPANY">COMPANY</option>
+                            <option value="INVALID">INVALID</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToStreetNumber">Numéro d'Adresse livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToStreetNumber" value="" id="shipToStreetNumber" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="shipToStreet">Adresse livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToStreet" value="" id="shipToStreet" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToStreet2">Adresse livraison 2 (V2)</label>
+                        <input type="text" class="form-control" name="shipToStreet2" value="" id="shipToStreet2" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToDistrict">District livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToDistrict" value="" id="shipToDistrict" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToCity">Ville livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToCity" value="" id="shipToCity" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToZip">Code postal livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToZip" value="" id="shipToZip" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToState">Etat livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToState" value="" id="shipToState" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToCountry">Pays livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToCountry" value="" id="shipToCountry" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToPhoneNum">Téléphone livraison (V2)</label>
+                        <input type="text" class="form-control" name="shipToPhoneNum" value="" id="shipToPhoneNum" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToType">Type (V2)</label>
+                        <select class="form-control" name="shipToType" id="shipToType">
+                            <option value=""></option>
+                            <option value="RECLAIM_IN_SHOP">RECLAIM_IN_SHOP</option>
+                            <option value="RELAY_POINT">RELAY_POINT</option>
+                            <option value="RECLAIM_IN_STATION">RECLAIM_IN_STATION</option>
+                            <option value="PACKAGE_DELIVERY_COMPANY">PACKAGE_DELIVERY_COMPANY</option>
+                            <option value="ETICKET">ETICKET</option>
+                            <option value="INVALID">INVALID</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToSpeed">Rapidité (V2)</label>
+                        <select class="form-control" name="shipToSpeed" id="shipToSpeed">
+                            <option value=""></option>
+                            <option value="STANDARD">STANDARD</option>
+                            <option value="EXPRESS">EXPRESS</option>
+                            <option value="INVALID">INVALID</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToDeliveryCompanyName">Transporteur (V2)</label>
+                        <input type="text" class="form-control" name="shipToDeliveryCompanyName" value="" id="shipToDeliveryCompanyName" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToUserInfo">Informations utilisateur (V2)</label>
+                        <input type="text" class="form-control" name="shipToUserInfo" value="" id="shipToUserInfo" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shipToLegalName">Raison sociale (V2)</label>
+                        <input type="text" class="form-control" name="shipToLegalName" value="" id="shipToLegalName" placeholder="">
+                    </div>
+                </div>
+            </div>
         </div>
 
 
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 1</label>
-            <input type="text" name="extInfoKey(key-1)" value="" id="extInfoKey(key-1)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 1</label>
-            <input type="text" name="extInfoValue(key-1)" value="" id="extInfoValue(key-1)" class="appar">
-        </div>
 
 
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 2</label>
-            <input type="text" name="extInfoKey(key-2)" value="" id="extInfoKey(key-2)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 2</label>
-            <input type="text" name="extInfoValue(key-2)" value="" id="extInfoValue(key-2)" class="appar">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">À trier</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-3 form-group">
+                        <label for="orderId">Identifiant commande (V1,V2)</label>
+                        <input type="text" class="form-control" name="orderId" value="" id="orderId" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="opCofinoga">Option Cofinoga (V2)</label>
+                        <input type="text" class="form-control" name="opCofinoga" value="" id="opCofinoga" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="opCetelem">Option Cetelem (V2)</label>
+                        <input type="text" class="form-control" name="opCetelem" value="" id="opCetelem" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="orderInfo">Order info (V1,V2)</label>
+                        <input type="text" class="form-control" name="orderInfo" value="" id="orderInfo" placeholder="">
+                    </div>
+
+                    <div class="col-md-3 form-group">
+                        <label for="orderInfo2">Order info 2 (V1,V2)</label>
+                        <input type="text" class="form-control" name="orderInfo2" value="" id="orderInfo2" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="orderInfo3">Order info 3 (V1,V2)</label>
+                        <input type="text" class="form-control" name="orderInfo3" value="" id="orderInfo3" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="contracts">Contrats (V1,V2)</label>
+                        <input type="text" class="form-control" name="contracts" value="" id="contracts" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="actionMode">Mode action (V2)</label>
+                        <select class="form-control" name="actionMode" id="actionMode">
+                            <option value="INTERACTIVE">INTERACTIVE</option>
+                            <option value="SILENT">SILENT</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="abstractInfo">Informations abstraites (V2)</label>
+                        <select class="form-control" name="abstractInfo" id="abstractInfo">
+                            <option value=""></option>
+                            <option value="SRC_INFO">SRC_INFO</option>
+                            <option value="SRC_HASH">SRC_HASH</option>
+                            <option value="ERROR">ERROR</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="contrib">Contribution (V1,V2)</label>
+                        <input type="text" class="form-control" name="contrib" value="" id="contrib" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="tokenId">Token id (V2)</label>
+                        <input type="text" class="form-control" name="tokenId" value="" id="tokenId" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="paymentType">Type du paiement (V2)</label>
+                        <select class="form-control" name="paymentType" id="paymentType">
+                            <option value=""></option>
+                            <option value="BOL_AP">BOL_AP</option>
+                            <option value="BOL_CH">BOL_CH</option>
+                            <option value="BOL_DM">BOL_DM</option>
+                            <option value="BOL_DMI">BOL_DMI</option>
+                            <option value="BOL_DR">BOL_DR</option>
+                            <option value="BOL_DS">BOL_DS</option>
+                            <option value="BOL_DSI">BOL_DSI</option>
+                            <option value="BOL_FAT">BOL_FAT</option>
+                            <option value="BOL_LC">BOL_LC</option>
+                            <option value="BOL_ME">BOL_ME</option>
+                            <option value="BOL_NCC">BOL_NCC</option>
+                            <option value="BOL_NCE">BOL_NCE</option>
+                            <option value="BOL_NCI">BOL_NCI</option>
+                            <option value="BOL_NCR">BOL_NCR</option>
+                            <option value="BOL_ND">BOL_ND</option>
+                            <option value="BOL_NP">BOL_NP</option>
+                            <option value="BOL_NPR">BOL_NPR</option>
+                            <option value="BOL_NS">BOL_NS</option>
+                            <option value="BOL_PC">BOL_PC</option>
+                            <option value="BOL_RC">BOL_RC</option>
+                            <option value="BOL_TM">BOL_TM</option>
+                            <option value="BOL_TS">BOL_TS</option>
+                            <option value="OTHER">OTHER</option>
+                            <option value="ERROR">ERROR</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="returnMode">Requestor du paiement (V2)</label>
+                        <select class="form-control" name="returnMode" id="returnMode">
+                            <option value=""></option>
+                            <option value="BANK">BANK</option>
+                            <option value="MERCHANT">MERCHANT</option>
+                            <option value="ERROR">ERROR</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="paymentOptionCode">Option Payment (V2)</label>
+                        <input type="text" class="form-control" name="paymentOptionCode" value="" id="paymentOptionCode" placeholder="">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="riskPrimaryWarranty">Garantie sur transaction primaire (V2)</label>
+                        <select class="form-control" name="riskPrimaryWarranty" id="riskPrimaryWarranty">
+                            <option value=""></option>
+                            <option value="DEFAULT">DEFAULT</option>
+                            <option value="IGNORE">IGNORE</option>
+                            <option value="CHECK">CHECK</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="targetPtf">Platforme de paiement (V2)</label>
+                        <select class="form-control" name="targetPtf" id="targetPtf">
+                            <option value=""></option>
+                            <option value="OLD">OLD</option>
+                            <option value="NEW">NEW</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Panier</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6 form-group">
+                        <label for="taxAmount">Montant des taxes</label>
+                        <input type="text" class="form-control" name="taxAmount" value="" id="taxAmount" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="shippingAmount">Frais de port</label>
+                        <input type="text" class="form-control" name="shippingAmount" value="" id="shippingAmount" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="insuranceAmount">Montant de l'assurance</label>
+                        <input type="text" class="form-control" name="insuranceAmount" value="" id="insuranceAmount" placeholder="">
+                    </div>
 
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 3</label>
-            <input type="text" name="extInfoKey(key-3)" value="" id="extInfoKey(key-3)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 3</label>
-            <input type="text" name="extInfoValue(key-3)" value="" id="extInfoValue(key-3)" class="appar">
-        </div>
-
-
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 4</label>
-            <input type="text" name="extInfoKey(key-4)" value="" id="extInfoKey(key-4)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 4</label>
-            <input type="text" name="extInfoValue(key-4)" value="" id="extInfoValue(key-4)" class="appar">
-        </div>
-
-
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 5</label>
-            <input type="text" name="extInfoKey(key-5)" value="" id="extInfoKey(key-5)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 5</label>
-            <input type="text" name="extInfoValue(key-5)" value="" id="extInfoValue(key-5)" class="appar">
+                </div>
+            </div>
         </div>
 
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">ExtInfo (V2)</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-0)">Ext Info key 0</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-0)" value="" id="extInfoKey(key-0)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-0)">Ext Info value 0</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-0)" value="" id="extInfoValue(key-0)" placeholder="">
+                    </div>
 
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 6</label>
-            <input type="text" name="extInfoKey(key-6)" value="" id="extInfoKey(key-6)" class="appar">
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-1)">Ext Info key 1</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-1)" value="" id="extInfoKey(key-1)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-1)">Ext Info value 1</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-1)" value="" id="extInfoValue(key-1)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-2)">Ext Info key 2</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-2)" value="" id="extInfoKey(key-2)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-2)">Ext Info value 2</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-2)" value="" id="extInfoValue(key-2)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-3)">Ext Info key 3</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-3)" value="" id="extInfoKey(key-3)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-3)">Ext Info value 3</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-3)" value="" id="extInfoValue(key-3)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-4)">Ext Info key 4</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-4)" value="" id="extInfoKey(key-4)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-4)">Ext Info value 4</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-4)" value="" id="extInfoValue(key-4)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-5)">Ext Info key 5</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-5)" value="" id="extInfoKey(key-5)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-5)">Ext Info value 5</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-5)" value="" id="extInfoValue(key-5)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-6)">Ext Info key 6</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-6)" value="" id="extInfoKey(key-6)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-6)">Ext Info value 6</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-6)" value="" id="extInfoValue(key-6)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-7)">Ext Info key 7</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-7)" value="" id="extInfoKey(key-7)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-7)">Ext Info value 7</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-7)" value="" id="extInfoKey(key-7)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-8)">Ext Info key 8</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-8)" value="" id="extInfoKey(key-8)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-8)">Ext Info value 8</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-8)" value="" id="extInfoValue(key-8)" placeholder="">
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoKey(key-9)">Ext Info key 9</label>
+                        <input type="text" class="form-control" name="extInfoKey(key-9)" value="" id="extInfoKey(key-9)" placeholder="">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="extInfoValue(key-9)">Ext Info value 9</label>
+                        <input type="text" class="form-control" name="extInfoValue(key-9)" value="" id="extInfoValue(key-9)" placeholder="">
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 6</label>
-            <input type="text" name="extInfoValue(key-6)" value="" id="extInfoValue(key-6)" class="appar">
-        </div>
-
-
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 7</label>
-            <input type="text" name="extInfoKey(key-7)" value="" id="extInfoKey(key-7)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 7</label>
-            <input type="text" name="extInfoValue(key-7)" value="" id="extInfoValue(key-7)" class="appar">
-        </div>
-
-
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 8</label>
-            <input type="text" name="extInfoKey(key-8)" value="" id="extInfoKey(key-8)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 8</label>
-            <input type="text" name="extInfoValue(key-8)" value="" id="extInfoValue(key-8)" class="appar">
-        </div>
-
-
-        <div class="paramV2 extinfo-key">
-            <label>Ext Info key 9</label>
-            <input type="text" name="extInfoKey(key-9)" value="" id="extInfoKey(key-9)" class="appar">
-        </div>
-        <div class="paramV2 extinfo-value">
-            <label>Ext Info value 9</label>
-            <input type="text" name="extInfoValue(key-9)" value="" id="extInfoValue(key-9)" class="appar">
-        </div>
-
-
-    </fieldset>
+    </div>
 
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <!-- <div class="container">
@@ -1257,7 +991,7 @@
         </div>-->
         <div id="navbar" class="navbar-collapse collapse" role="action">
             <div class="navbar-buttonex">
-                <button type="button" class="btn btn-lg btn-primary" aria-label="Left Align" onclick="javascript:document.forms[0].submit()">
+                <button type="button" class="btn btn-lg btn-success" aria-label="Left Align" onclick="javascript:document.forms[0].submit()">
                     <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                     Go To Payment Page
                 </button>
