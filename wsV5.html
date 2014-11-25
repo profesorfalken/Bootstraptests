@@ -651,7 +651,7 @@
         }
         $(document).ready(function () {
             var url = window.location.href;
-            var operation = null;
+            var operation = "createPayment";
             if (url.lastIndexOf('?') != -1) {
                 operation = url.split('?')[1];
                 operation = operation.split('=')[1];
@@ -675,25 +675,162 @@
         var fieldChecking = {
             allowedOperations: {
                 "createPayment": {
-                    "commonRequest": [],
-                    "threeDSRequest": [],
-                    "paymentRequest": [],
-                    "orderRequest": [],
-                    "cardRequest": [],
-                    "customerRequest-billingDetails": [],
+                    "commonRequest": [{
+                        "paymentSource": "EC"
+                    }, {
+                        "submissionDate": new Date().toISOString()
+                    }, {
+                        "comment": "Test payment"
+                    }],
+                    "threeDSRequest": [{
+                        "mode": "DISABLED"
+                    }],
+                    "paymentRequest": [{
+                        "amount": "2000"
+                    }, {
+                        "currency": "978"
+                    }],
+                    "orderRequest": [{
+                        "orderId": "TEST-01"
+                    }],
+                    "cardRequest": [{
+                        "number": "4970100000000003"
+                    }, {
+                        "scheme": "VISA"
+                    }, {
+                        "expiryMonth": "12"
+                    }, {
+                        "expiryYear": "2015"
+                    }, {
+                        "cardSecurityCode": "123"
+                    }, {
+                        "cardHolderBirthDay": "1976-04-18"
+                    }],
+                    "customerRequest-billingDetails": [{
+                        "email": "javier.garcia@lyra-network.com"
+                    }],
                     "customerRequest-shippingDetails": [],
                     "techRequest": []
                 },
                 "createToken": {
-                    "commonRequest": [],
-                    "cardRequest": [],
-                    "customerRequest-billingDetails": [],
-                    "customerRequest-shippingDetails": []
+                    "commonRequest": [{
+                        "paymentSource": "EC"
+                    }, {
+                        "submissionDate": new Date().toISOString()
+                    }, {
+                        "comment": "Test payment"
+                    }],
+                    "cardRequest": [{
+                        "number": "4970100000000003"
+                    }, {
+                        "scheme": "VISA"
+                    }, {
+                        "expiryMonth": "12"
+                    }, {
+                        "expiryYear": "2015"
+                    }, {
+                        "cardSecurityCode": "123"
+                    }],
+                    "customerRequest-billingDetails": [
+                        {
+                            "reference": "REF"
+                    }, {
+                            "title": "Mr"
+                    }, {
+                            "type": "PRIVATE"
+                    }, {
+                            "firstName": "Jean"
+                    }, {
+                            "lastName": "Dupont"
+                    }, {
+                            "phoneNumber": "123456789"
+                    }, {
+                            "email": "mail@mail.com"
+                    }, {
+                            "streetNumber": "1234"
+                    }, {
+                            "address": "Address"
+                    }, {
+                            "district": "District"
+                    }, {
+                            "zipCode": "12345"
+                    }, {
+                            "city": "City"
+                    }, {
+                            "state": "State"
+                    }, {
+                            "country": "None"
+                    }, {
+                            "language": "en"
+                    }, {
+                            "cellPhoneNumber": "654321098"
+                    }, {
+                            "legalName": "Legal Name"
+                    }
+                    ],
+                    "customerRequest-shippingDetails": [{
+                        "type": "REF"
+                    }, {
+                        "firstName": "Jean"
+                    }, {
+                        "lastName": "Dupont"
+                    }, {
+                        "phoneNumber": "123456789"
+                    }, {
+                        "streetNumber": "1234"
+                    }, {
+                        "street": "Street St"
+                    }, {
+                        "street2": "Street St2"
+                    }, {
+                        "district": "District"
+                    }, {
+                        "zipCode": "12345"
+                    }, {
+                        "city": "City"
+                    }, {
+                        "state": "State"
+                    }, {
+                        "country": "Country"
+                    }, {
+                        "deliveryCompanyName": "DELIVERYCOMP"
+                    }, {
+                        "shippingSpeed": "STANDARD"
+                    }, {
+                        "shippingMethod": "PACKAGE_DELIVERY_COMPANY"
+                    }, {
+                        "legalName": "Legal Name"
+                    }]
                 },
                 "createSubscription": {
-                    "commonRequest": ["paymentToken", "comment"],
-                    "orderRequest": ["orderId", "orderinfo", "orderInfo2", "orderInfo3", "extInfo"],
-                    "subscriptionRequest": ["subscriptionId", "effectDate", "initialAmoun", "initialAmountNumber", "rrule", "description", "amount", "currency"]
+                    "commonRequest": [{
+                        "submissionDate": new Date().toISOString()
+                    }, {
+                        "comment": "Test subscription"
+                    }],
+                    "cardRequest": [{
+                        "paymentToken": "ID_DE_TEST"
+                    }],
+                    "orderRequest": [{
+                        "orderId": "TEST-01"
+                    }],
+                    "subscriptionRequest": [{
+                        "subscriptionId": ""
+                    }, {
+                        "effectDate": new Date().toISOString()
+                    }, {
+                        "initialAmount": "10"
+                    }, {
+                        "initialAmountNumber": "3"
+                    }, {
+                        "rrule": "RRULE:FREQ=MONTHLY;COUNT=12;BYMONTHDAY=10"
+                    }, {
+                        "description": "Test Subscription"
+                    }, {
+                        "amount": "100"
+                    }, {
+                        "currency": "978"
+                    }]
                 },
                 "updatePayment": {
                     "commonRequest": [],
@@ -788,13 +925,16 @@
 
                 $.each(this.allowedOperations, function (operationName, requestObjects) {
                     if (operationName == operation) {
-                        for (var requestName in requestObjects) {
-                            console.log(requestName);
+                        $.each(requestObjects, function (requestName, fields) {
                             $("#" + requestName).show();
-                        }
+                            $.each(fields, function (index, field) {
+                                for (var key in field) {
+                                    $("#" + key).val(field[key]);
+                                }
+                            });
+                        });
                     }
                 });
-                console.log("IN!");
             }
         }
     </script>
