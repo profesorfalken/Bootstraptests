@@ -357,6 +357,10 @@
                                 <input type="text" class="form-control" name="initialAmount" value="" id="initialAmount" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
+                                <label for="initialAmountNumber">Initial Amount Number</label>
+                                <input type="text" class="form-control" name="initialAmountNumber" value="" id="initialAmountNumber" placeholder="">
+                            </div>
+                            <div class="col-md-3 form-group">
                                 <label for="rrule">RRule</label>
                                 <input type="text" class="form-control" name="rrule" value="" id="rrule" placeholder="">
                             </div>
@@ -371,8 +375,8 @@
                                 <input type="text" class="form-control" name="subscriptionAmount" value="" id="subscriptionAmount" placeholder="">
                             </div>
                             <div class="col-md-3 form-group">
-                                <label for="subscriptionCurency">Currency</label>
-                                <input type="datetime" class="form-control" name="subscriptionCurency" value="" id="subscriptionCurency" placeholder="">
+                                <label for="subscriptionCurrency">Currency</label>
+                                <input type="datetime" class="form-control" name="subscriptionCurrency" value="" id="subscriptionCurrency" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -439,13 +443,22 @@
                                 <input type="text" class="form-control" name="billingType" value="" id="billingType" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="billingName">Name</label>
-                                <input type="text" class="form-control" name="billingName" value="" id="billingName" placeholder="">
+                                <label for="billingFirstName">First Name</label>
+                                <input type="text" class="form-control" name="billingFirstName" value="" id="billingFirstName" placeholder="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="billingLastName">Last Name</label>
+                                <input type="text" class="form-control" name="billingLastName" value="" id="billingLastName" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
                                 <label for="billingPhoneNumber">Phone Number</label>
                                 <input type="text" class="form-control" name="billingPhoneNumber" value="" id="billingPhoneNumber" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingEmail">Email</label>
+                                <input type="text" class="form-control" name="billingEmail" value="" id="billingEmail" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
@@ -489,6 +502,11 @@
                                 <label for="billingCellPhoneNumber">Cell Phone Number</label>
                                 <input type="text" class="form-control" name="billingCellPhoneNumber" value="" id="billingCellPhoneNumber" placeholder="">
                             </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="billingLegalName">Legal Name</label>
+                                <input type="text" class="form-control" name="billingLegalName" value="" id="billingLegalName" placeholder="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -504,8 +522,12 @@
                                 <input type="text" class="form-control" name="shippingType" value="" id="shippingType" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="shippingName">Name</label>
-                                <input type="text" class="form-control" name="shippingName" value="" id="shippingName" placeholder="">
+                                <label for="shippingFirstName">First Name</label>
+                                <input type="text" class="form-control" name="shippingFirstName" value="" id="shippingFirstName" placeholder="">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="shippingLastName">Last Name</label>
+                                <input type="text" class="form-control" name="shippingLastName" value="" id="shippingLastName" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
@@ -518,20 +540,20 @@
                                 <input type="text" class="form-control" name="shippingStreetNumber" value="" id="shippingStreetNumber" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="shippingAddress">Street</label>
-                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="">
+                                <label for="shippingStreet">Street</label>
+                                <input type="datetime" class="form-control" name="shippingStreet" value="" id="shippingStreet" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="shippingAddress2">Street 2</label>
-                                <input type="datetime" class="form-control" name="shippingAddress2" value="" id="shippingAddress2" placeholder="">
+                                <label for="shippingStreet2">Street 2</label>
+                                <input type="datetime" class="form-control" name="shippingStreet2" value="" id="shippingStreet2" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
-                                <label for="shippingAddress">District</label>
-                                <input type="datetime" class="form-control" name="shippingAddress" value="" id="shippingAddress" placeholder="">
+                                <label for="shippingDistrict">District</label>
+                                <input type="datetime" class="form-control" name="shippingDistrict" value="" id="shippingDistrict" placeholder="">
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="shippingZipCode">Zip Code</label>
-                                <input type="text" class="form-control" name="shippingZipCode" value="" id="shippingipCode" placeholder="">
+                                <input type="text" class="form-control" name="shippingZipCode" value="" id="shippingZipCode" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
@@ -550,18 +572,23 @@
                             </div>
 
                             <div class="col-md-6 form-group">
-                                <label for="shippingLanguage">Company</label>
-                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="">
+                                <label for="shippingDeliveryCompanyName">Company</label>
+                                <input type="text" class="form-control" name="shippingDeliveryCompanyName" value="" id="shippingDeliveryCompanyName" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
-                                <label for="shippingLanguage">Speed</label>
-                                <input type="text" class="form-control" name="shippingLanguage" value="" id="shippingLanguage" placeholder="">
+                                <label for="shippingSpeed">Speed</label>
+                                <input type="text" class="form-control" name="shippingSpeed" value="" id="shippingSpeed" placeholder="">
                             </div>
 
                             <div class="col-md-6 form-group">
-                                <label for="shippingCellPhoneNumber">Method</label>
-                                <input type="text" class="form-control" name="shippingCellPhoneNumber" value="" id="shippingCellPhoneNumber" placeholder="">
+                                <label for="shippingMethod">Method</label>
+                                <input type="text" class="form-control" name="shippingMethod" value="" id="shippingMethod" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label for="shippingLegalName">Legal Name</label>
+                                <input type="text" class="form-control" name="shippingLegalName" value="" id="shippingLegalName" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -649,6 +676,13 @@
             str = str.toString();
             return str.length < max ? pad("0" + str, max) : str;
         }
+
+        function ISODateString(d) {
+            function pad(n) {
+                return n < 10 ? '0' + n : n
+            }
+            return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + 'T' + pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds()) + 'Z'
+        }
         $(document).ready(function () {
             var url = window.location.href;
             var operation = "createPayment";
@@ -678,7 +712,7 @@
                     "commonRequest": [{
                         "paymentSource": "EC"
                     }, {
-                        "submissionDate": new Date().toISOString()
+                        "submissionDate": ISODateString(new Date())
                     }, {
                         "comment": "Test payment"
                     }],
@@ -716,7 +750,7 @@
                     "commonRequest": [{
                         "paymentSource": "EC"
                     }, {
-                        "submissionDate": new Date().toISOString()
+                        "submissionDate": ISODateString(new Date())
                     }, {
                         "comment": "Test payment"
                     }],
@@ -733,78 +767,78 @@
                     }],
                     "customerRequest-billingDetails": [
                         {
-                            "reference": "REF"
+                            "billingReference": "REF"
                     }, {
-                            "title": "Mr"
+                            "billingTitle": "Mr"
                     }, {
-                            "type": "PRIVATE"
+                            "billingType": "PRIVATE"
                     }, {
-                            "firstName": "Jean"
+                            "billingFirstName": "Jean"
                     }, {
-                            "lastName": "Dupont"
+                            "billingLastName": "Dupont"
                     }, {
-                            "phoneNumber": "123456789"
+                            "billingPhoneNumber": "123456789"
                     }, {
-                            "email": "mail@mail.com"
+                            "billingEmail": "mail@mail.com"
                     }, {
-                            "streetNumber": "1234"
+                            "billingStreetNumber": "1234"
                     }, {
-                            "address": "Address"
+                            "billingAddress": "Address"
                     }, {
-                            "district": "District"
+                            "billingDistrict": "District"
                     }, {
-                            "zipCode": "12345"
+                            "billingZipCode": "12345"
                     }, {
-                            "city": "City"
+                            "billingCity": "City"
                     }, {
-                            "state": "State"
+                            "billingState": "State"
                     }, {
-                            "country": "None"
+                            "billingCountry": "None"
                     }, {
-                            "language": "en"
+                            "billingLanguage": "en"
                     }, {
-                            "cellPhoneNumber": "654321098"
+                            "billingCellPhoneNumber": "654321098"
                     }, {
-                            "legalName": "Legal Name"
+                            "billingLegalName": "Legal Name"
                     }
                     ],
                     "customerRequest-shippingDetails": [{
-                        "type": "REF"
+                        "shippingType": "PRIVATE"
                     }, {
-                        "firstName": "Jean"
+                        "shippingFirstName": "Jean"
                     }, {
-                        "lastName": "Dupont"
+                        "shippingLastName": "Dupont"
                     }, {
-                        "phoneNumber": "123456789"
+                        "shippingPhoneNumber": "123456789"
                     }, {
-                        "streetNumber": "1234"
+                        "shippingStreetNumber": "1234"
                     }, {
-                        "street": "Street St"
+                        "shippingStreet": "Street St"
                     }, {
-                        "street2": "Street St2"
+                        "shippingStreet2": "Street St2"
                     }, {
-                        "district": "District"
+                        "shippingDistrict": "District"
                     }, {
-                        "zipCode": "12345"
+                        "shippingZipCode": "12345"
                     }, {
-                        "city": "City"
+                        "shippingCity": "City"
                     }, {
-                        "state": "State"
+                        "shippingState": "State"
                     }, {
-                        "country": "Country"
+                        "shippingCountry": "Country"
                     }, {
-                        "deliveryCompanyName": "DELIVERYCOMP"
+                        "shippingDeliveryCompanyName": "DELIVERYCOMP"
                     }, {
                         "shippingSpeed": "STANDARD"
                     }, {
                         "shippingMethod": "PACKAGE_DELIVERY_COMPANY"
                     }, {
-                        "legalName": "Legal Name"
+                        "shippingLegalName": "Legal Name"
                     }]
                 },
                 "createSubscription": {
                     "commonRequest": [{
-                        "submissionDate": new Date().toISOString()
+                        "submissionDate": ISODateString(new Date())
                     }, {
                         "comment": "Test subscription"
                     }],
@@ -817,7 +851,7 @@
                     "subscriptionRequest": [{
                         "subscriptionId": ""
                     }, {
-                        "effectDate": new Date().toISOString()
+                        "effectDate": ISODateString(new Date())
                     }, {
                         "initialAmount": "10"
                     }, {
@@ -825,17 +859,29 @@
                     }, {
                         "rrule": "RRULE:FREQ=MONTHLY;COUNT=12;BYMONTHDAY=10"
                     }, {
-                        "description": "Test Subscription"
+                        "subscriptionDescription": "Test Subscription"
                     }, {
-                        "amount": "100"
+                        "subscriptionAmount": "100"
                     }, {
-                        "currency": "978"
+                        "subscriptionCurrency": "978"
                     }]
                 },
                 "updatePayment": {
-                    "commonRequest": [],
-                    "queryRequest": [],
-                    "paymentRequest": [],
+                    "commonRequest": [{
+                        "paymentSource": "EC"
+                }, {
+                        "submissionDate": ISODateString(new Date())
+                }, {
+                        "comment": "Test update payment"
+                }],
+                    "queryRequest": [{
+                        "transactionId": "123456"
+                    }],
+                    "paymentRequest": [{
+                        "amount": "1800"
+                    }, {
+                        "currency": "978"
+                    }],
                     "cardRequest": [],
                     "customerRequest-billingDetails": [],
                     "customerRequest-shippingDetails": []
@@ -868,16 +914,42 @@
                     "queryRequest": []
                 },
                 "cancelPayment": {
-                    "commonRequest": [],
-                    "queryRequest": []
-                },
-                "cancelToken": {
-                    "commonRequest": [],
-                    "queryRequest": []
+                    "commonRequest": [{
+                        "paymentSource": "EC"
+                    }, {
+                        "submissionDate": ISODateString(new Date())
+                    }, {
+                        "comment": "Test update payment"
+                    }],
+                    "queryRequest": [{
+                        "queryTransactionId": "123456"
+                    }]
                 },
                 "cancelSubscription": {
-                    "commonRequest": [],
-                    "queryRequest": []
+                    "commonRequest": [{
+                        "paymentSource": "EC"
+                    }, {
+                        "submissionDate": ISODateString(new Date())
+                    }, {
+                        "comment": "Test update subscription"
+                    }],
+                    "queryRequest": [{
+                        "querySubscriptionId": "20141114kySp6e"
+                    }, {
+                        "queryPaymentToken": "ID_DE_TEST"
+                    }]
+                },
+                "cancelToken": {
+                    "commonRequest": [{
+                        "paymentSource": "EC"
+                    }, {
+                        "submissionDate": ISODateString(new Date())
+                    }, {
+                        "comment": "Test update token"
+                    }],
+                    "queryRequest": [{
+                        "queryPaymentToken": "ID_DE_TEST"
+                    }]
                 },
                 "refundPayment": {
                     "commonRequest": [],
